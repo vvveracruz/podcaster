@@ -4,10 +4,17 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+toga = "==0.3.0.dev8"
 briefcase = "*"
 black = "*"
+feedparser = "*"
+playsound = "==1.2.2"
+pyobjc = "*" # for playsound to run more efficiently
+pyaudio = "*"
+wave = "*"
 
 [dev-packages]
+ipython = "*"
 
 [requires]
 python_version = "3.10"

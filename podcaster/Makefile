@@ -1,8 +1,10 @@
 init:
-	pipenv install
+	pipenv install --dev
+	brew bundle install --file ./../Brewfile
 
 init-android:
-	pipenv install 
+	pipenv install --dev
+	brew bundle install --file ./../Brewfile
 	pipenv run briefcase create android
 	
 dev-run:
@@ -26,6 +28,5 @@ android-run:
 	pipenv run briefcase --update run android
 
 clean:
-	rm *.log
 	rm *.log
 
