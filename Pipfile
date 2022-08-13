@@ -8,10 +8,7 @@ toga = "==0.3.0.dev8"
 briefcase = "*"
 black = "*"
 feedparser = "*"
-playsound = "==1.2.2"
-pyobjc = "*" # for playsound to run more efficiently
-pyaudio = "*"
-wave = "*"
+pygame = "*"
 
 [dev-packages]
 ipython = "*"
