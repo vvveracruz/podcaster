@@ -16,7 +16,8 @@ class Podcaster(toga.App):
         main_box = toga.Box()
 
         feed = Feed('http://feed.thisamericanlife.org/talpodcast')
-        up_next_ep = Episode(feed.up_next())
+        up_next_ep = feed.up_next()
+        # TODO: player(feed) -> plays the next episode from the feed
 
         feed_box = toga.Box()
         feed_box.add(toga.Label(feed.title, style = Pack(direction=ROW, padding=5)))
