@@ -4,6 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [dev-packages]
+# install project as editable
+podcaster = {editable = true,path = "."}
 black = "*"
 
 [requires]

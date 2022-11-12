@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "758153d7fe2ddf801a1369b70e703145d0ffa6421133c9d0daacd3f37b75bcd1"
+            "sha256": "cb2ee66ed5c119fa72264c0be3237ca9fa578d2385e9a37ea28721837c7d06e2"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -74,6 +74,10 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==2.5.3"
+        },
+        "podcaster": {
+            "editable": true,
+            "path": "."
         },
         "tomli": {
             "hashes": [
