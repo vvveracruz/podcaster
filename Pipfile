@@ -4,13 +4,14 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-toga = "==0.3.0.dev8"
-briefcase = "*"
-black = "*"
 feedparser = "*"
-pygame = "*"
+pygame = "==2.1.2"
+requests = "*"
 
 [dev-packages]
+toga = "==0.3.0.dev35"
+briefcase = "*"
+black = "*"
 ipython = "*"
 
 [requires]

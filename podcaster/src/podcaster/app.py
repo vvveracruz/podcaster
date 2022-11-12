@@ -2,7 +2,8 @@
 The queuer of dreams.
 """
 import toga
-from .components import Feed, Player
+from .components import Feed
+from .components import Player
 from toga.style import Pack
 from toga.style.pack import COLUMN, ROW
 from time import sleep
@@ -50,4 +51,5 @@ class Podcaster(toga.App):
 
 
 def main():
-    return Podcaster(name="Podcaster", app_id="cz.vgg.podcaster")
+    # return Podcaster(name="Podcaster", app_id="cz.vgg.podcaster")
+    return Podcaster()

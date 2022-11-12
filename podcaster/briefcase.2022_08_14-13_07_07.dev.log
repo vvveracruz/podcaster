@@ -1,0 +1,199 @@
+Date/Time:       2022-08-14 13:07:07 
+Command line:    /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin/briefcase dev
+
+OS Release:      Darwin 21.6.0
+OS Version:      Darwin Kernel Version 21.6.0: Sat Jun 18 17:07:25 PDT 2022; root:xnu-8020.140.41~1/RELEASE_X86_64
+Architecture:    x86_64
+Platform:        macOS-12.5-x86_64-i386-64bit
+
+Python exe:      /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin/python
+Python version:  3.10.6 (main, Aug 11 2022, 13:49:25) [Clang 13.1.6 (clang-1316.0.21.2.5)]
+Virtual env:     True
+Conda env:       False
+
+Briefcase:       0.3.8
+Target platform: macOS
+Target format:   None
+
+Environment Variables:
+    APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL=true
+    AWS_MFA_DURATION=28800
+    AWS_PROFILE=oe-prod-data-analyst-mfa
+    CIRCLE_CI_TOKEN_BASE_64=********************
+    COLORFGBG=7;0
+    COLORTERM=truecolor
+    COMMAND_MODE=unix2003
+    EDITOR=vim
+    GIT_ASKPASS=********************
+    HOME=/Users/ve.gomez
+    ITERM_PROFILE=Default
+    ITERM_SESSION_ID=w0t0p0:13732491-AD2C-4AE5-8595-F1BB90507163
+    LANG=en_GB.UTF-8
+    LC_TERMINAL=iTerm2
+    LC_TERMINAL_VERSION=3.4.15
+    LESS=-R
+    LOGNAME=ve.gomez
+    LSCOLORS=Gxfxcxdxbxegedabagacad
+    LaunchInstanceID=593449EA-F088-482A-AB73-16F6A820D80A
+    MAKEFLAGS=
+    MAKELEVEL=1
+    MFLAGS=
+    MallocNanoZone=0
+    ORIGINAL_XDG_CURRENT_DESKTOP=undefined
+    PAGER=less
+    PATH=/Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin:/usr/local/Cellar/pipenv/2022.8.13/libexec/tools:/Users/ve.gomez/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/Users/ve.gomez/bin
+    PIPENV_ACTIVE=1
+    PIP_DISABLE_PIP_VERSION_CHECK=1
+    PIP_PYTHON_PATH=/usr/local/Cellar/pipenv/2022.8.13/libexec/bin/python3.10
+    PWD=/Users/ve.gomez/src/vvveracruz/podcaster/podcaster
+    PYTHONDONTWRITEBYTECODE=1
+    SECURITYSESSIONID=186a4
+    SHELL=/bin/zsh
+    SHLVL=3
+    SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.7w8R8igNa1/Listeners
+    TENTACLIO__SECRETS_FILE=********************
+    TERM=xterm-256color
+    TERM_PROGRAM=vscode
+    TERM_PROGRAM_VERSION=1.70.0
+    TERM_SESSION_ID=w0t0p0:13732491-AD2C-4AE5-8595-F1BB90507163
+    TMPDIR=/var/folders/_l/p09qm54d2kz523pc154x4c9m0000gn/T/
+    USER=ve.gomez
+    VIRTUAL_ENV=/Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf
+    VSCODE_GIT_ASKPASS_EXTRA_ARGS=********************
+    VSCODE_GIT_ASKPASS_MAIN=********************
+    VSCODE_GIT_ASKPASS_NODE=********************
+    VSCODE_GIT_IPC_HANDLE=/var/folders/_l/p09qm54d2kz523pc154x4c9m0000gn/T/vscode-git-c2b63d8a32.sock
+    VSCODE_INJECTION=1
+    XPC_FLAGS=0x0
+    XPC_SERVICE_NAME=0
+    ZDOTDIR=/var/folders/_l/p09qm54d2kz523pc154x4c9m0000gn/T/vscode-zsh
+    ZSH=/Users/ve.gomez/.oh-my-zsh
+    _=/usr/bin/make
+    __CFBundleIdentifier=com.microsoft.VSCode
+    __CF_USER_TEXT_ENCODING=0x1F5:0:2
+
+Briefcase Log:
+[13:07:06]                                                                                                                                                                dev.py:147
+           [podcaster] Starting in dev mode...                                                                                                                            dev.py:147
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin/python -m podcaster                                                             subprocess.py:435
+           >>> Environment Overrides:                                                                                                                              subprocess.py:446
+           >>>     PYTHONPATH=src                                                                                                                                  subprocess.py:448
+[13:07:07] >>> Return code: 1                                                                                                                                      subprocess.py:464
+                                                                                                                                                                      __main__.py:21
+           Unable to start application 'podcaster'                                                                                                                    __main__.py:22
+
+╭─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────╮
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/briefcase/commands/dev.py:88 in run_dev_app                                             │
+│                                                                                                                                                                                  │
+│    85 │   │   """                                                                             ╭────────────────────────────── locals ───────────────────────────────╮            │
+│    86 │   │   try:                                                                            │     app = <cz.vgg.podcaster v0.0.1 AppConfig>                       │            │
+│    87 │   │   │   # Invoke the app.                                                           │     env = {'PYTHONPATH': 'src'}                                     │            │
+│ ❱  88 │   │   │   self.subprocess.run(                                                        │ options = {}                                                        │            │
+│    89 │   │   │   │   [sys.executable, "-m", app.module_name],                                │    self = <briefcase.commands.dev.DevCommand object at 0x105baa290> │            │
+│    90 │   │   │   │   env=env,                                                                ╰─────────────────────────────────────────────────────────────────────╯            │
+│    91 │   │   │   │   check=True,                                                                                                                                                │
+│                                                                                                                                                                                  │
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/briefcase/integrations/subprocess.py:223 in run                                         │
+│                                                                                                                                                                                  │
+│   220 │   │   self._log_environment(kwargs.get("env"))                                                                                                                           │
+│   221 │   │                                                                                                                                                                      │
+│   222 │   │   try:                                                                                                                                                               │
+│ ❱ 223 │   │   │   command_result = self._subprocess.run(                                                                                                                         │
+│   224 │   │   │   │   [str(arg) for arg in args], **self.final_kwargs(**kwargs)                                                                                                  │
+│   225 │   │   │   )                                                                                                                                                              │
+│   226 │   │   except subprocess.CalledProcessError as e:                                                                                                                         │
+│                                                                                                                                                                                  │
+│ ╭─────────────────────────────────────────────────────── locals ───────────────────────────────────────────────────────╮                                                         │
+│ │                 args = ['/Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin/python', '-m', 'podcaster'] │                                                         │
+│ │ is_output_redirected = None                                                                                          │                                                         │
+│ │               kwargs = {'env': {'PYTHONPATH': 'src'}, 'check': True}                                                 │                                                         │
+│ │                 self = <briefcase.integrations.subprocess.Subprocess object at 0x105bcc3a0>                          │                                                         │
+│ │        stream_output = False                                                                                         │                                                         │
+│ ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                         │
+│                                                                                                                                                                                  │
+│ /usr/local/Cellar/python@3.10/3.10.6_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py:524 in run                                                         │
+│                                                                                                                                                                                  │
+│    521 │   │   │   raise                                                                                                                                                         │
+│    522 │   │   retcode = process.poll()                                                                                                                                          │
+│    523 │   │   if check and retcode:                                                                                                                                             │
+│ ❱  524 │   │   │   raise CalledProcessError(retcode, process.args,                                                                                                               │
+│    525 │   │   │   │   │   │   │   │   │    output=stdout, stderr=stderr)                                                                                                        │
+│    526 │   return CompletedProcess(process.args, retcode, stdout, stderr)                                                                                                        │
+│    527                                                                                                                                                                           │
+│                                                                                                                                                                                  │
+│ ╭───────────────────────────────────────────────────────── locals ─────────────────────────────────────────────────────────╮                                                     │
+│ │ capture_output = False                                                                                                   │                                                     │
+│ │          check = True                                                                                                    │                                                     │
+│ │          input = None                                                                                                    │                                                     │
+│ │         kwargs = {                                                                                                       │                                                     │
+│ │                  │   'env': {                                                                                            │                                                     │
+│ │                  │   │   'PATH': '/Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin:/usr/local/Cella'+149, │                                                     │
+│ │                  │   │   'CIRCLE_CI_TOKEN_BASE_64': 'ZmFlM2U1MjVhMWZmY2RiYjE5MGQ4ZDZmYmU5NjQ0MWY2OTczZGQ5NA==',          │                                                     │
+│ │                  │   │   'TERM_PROGRAM': 'vscode',                                                                       │                                                     │
+│ │                  │   │   'TERM': 'xterm-256color',                                                                       │                                                     │
+│ │                  │   │   'SHELL': '/bin/zsh',                                                                            │                                                     │
+│ │                  │   │   'MAKEFLAGS': '',                                                                                │                                                     │
+│ │                  │   │   'TMPDIR': '/var/folders/_l/p09qm54d2kz523pc154x4c9m0000gn/T/',                                  │                                                     │
+│ │                  │   │   'TERM_PROGRAM_VERSION': '1.70.0',                                                               │                                                     │
+│ │                  │   │   'MallocNanoZone': '0',                                                                          │                                                     │
+│ │                  │   │   'ORIGINAL_XDG_CURRENT_DESKTOP': 'undefined',                                                    │                                                     │
+│ │                  │   │   ... +46                                                                                         │                                                     │
+│ │                  │   },                                                                                                  │                                                     │
+│ │                  │   'text': True,                                                                                       │                                                     │
+│ │                  │   'encoding': 'UTF-8'                                                                                 │                                                     │
+│ │                  }                                                                                                       │                                                     │
+│ │      popenargs = (['/Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin/python', '-m', 'podcaster'],)        │                                                     │
+│ │        process = <Popen: returncode: 1 args: ['/Users/ve.gomez/.local/share/virtualenvs/podca...>                        │                                                     │
+│ │        retcode = 1                                                                                                       │                                                     │
+│ │         stderr = None                                                                                                    │                                                     │
+│ │         stdout = None                                                                                                    │                                                     │
+│ │        timeout = None                                                                                                    │                                                     │
+│ ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                     │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+CalledProcessError: Command '['/Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin/python', '-m', 'podcaster']' returned non-zero exit status 1.
+
+The above exception was the direct cause of the following exception:
+
+╭─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────╮
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/briefcase/__main__.py:14 in main                                                        │
+│                                                                                                                                                                                  │
+│   11 │   try:                                                                                ╭────────────────────────────────── locals ──────────────────────────────────╮      │
+│   12 │   │   command, options = parse_cmdline(sys.argv[1:])                                  │ command = <briefcase.commands.dev.DevCommand object at 0x105baa290>        │      │
+│   13 │   │   command.parse_config("pyproject.toml")                                          │       e = BriefcaseCommandError("Unable to start application 'podcaster'") │      │
+│ ❱ 14 │   │   command(**options)                                                              │     log = <briefcase.console.Log object at 0x103e90190>                    │      │
+│   15 │   │   result = 0                                                                      │ options = {'appname': None, 'update_dependencies': False, 'run_app': True} │      │
+│   16 │   except HelpText as e:                                                               │  result = 200                                                              │      │
+│   17 │   │   log.info()                                                                      ╰────────────────────────────────────────────────────────────────────────────╯      │
+│                                                                                                                                                                                  │
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/briefcase/commands/dev.py:149 in __call__                                               │
+│                                                                                                                                                                                  │
+│   146 │   │   if run_app:                                                                                                                                                        │
+│   147 │   │   │   self.logger.info("Starting in dev mode...", prefix=app.app_name)                                                                                               │
+│   148 │   │   │   env = self.get_environment(app)                                                                                                                                │
+│ ❱ 149 │   │   │   return self.run_dev_app(app, env, **options)                                                                                                                   │
+│   150                                                                                                                                                                            │
+│                                                                                                                                                                                  │
+│ ╭─────────────────────────────────────────────────── locals ────────────────────────────────────────────────────╮                                                                │
+│ │                 app = <cz.vgg.podcaster v0.0.1 AppConfig>                                                     │                                                                │
+│ │             appname = None                                                                                    │                                                                │
+│ │      dist_info_path = PosixPath('/Users/ve.gomez/src/vvveracruz/podcaster/podcaster/src/podcaster.dist-info') │                                                                │
+│ │                 env = {'PYTHONPATH': 'src'}                                                                   │                                                                │
+│ │             options = {}                                                                                      │                                                                │
+│ │             run_app = True                                                                                    │                                                                │
+│ │                self = <briefcase.commands.dev.DevCommand object at 0x105baa290>                               │                                                                │
+│ │ update_dependencies = False                                                                                   │                                                                │
+│ ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                                │
+│                                                                                                                                                                                  │
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/briefcase/commands/dev.py:94 in run_dev_app                                             │
+│                                                                                                                                                                                  │
+│    91 │   │   │   │   check=True,                                                             ╭────────────────────────────── locals ───────────────────────────────╮            │
+│    92 │   │   │   )                                                                           │     app = <cz.vgg.podcaster v0.0.1 AppConfig>                       │            │
+│    93 │   │   except subprocess.CalledProcessError as e:                                      │     env = {'PYTHONPATH': 'src'}                                     │            │
+│ ❱  94 │   │   │   raise BriefcaseCommandError(                                                │ options = {}                                                        │            │
+│    95 │   │   │   │   f"Unable to start application '{app.app_name}'"                         │    self = <briefcase.commands.dev.DevCommand object at 0x105baa290> │            │
+│    96 │   │   │   ) from e                                                                    ╰─────────────────────────────────────────────────────────────────────╯            │
+│    97                                                                                                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+BriefcaseCommandError: Unable to start application 'podcaster'

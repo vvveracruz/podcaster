@@ -1,0 +1,249 @@
+Date/Time:       2022-08-13 19:36:24 
+Command line:    /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin/briefcase update
+
+OS Release:      Darwin 21.6.0
+OS Version:      Darwin Kernel Version 21.6.0: Sat Jun 18 17:07:25 PDT 2022; root:xnu-8020.140.41~1/RELEASE_X86_64
+Architecture:    x86_64
+Platform:        macOS-12.5-x86_64-i386-64bit
+
+Python exe:      /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin/python
+Python version:  3.10.6 (main, Aug 11 2022, 13:49:25) [Clang 13.1.6 (clang-1316.0.21.2.5)]
+Virtual env:     True
+Conda env:       False
+
+Briefcase:       0.3.8
+Target platform: macOS
+Target format:   app
+
+Environment Variables:
+    APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL=true
+    AWS_MFA_DURATION=28800
+    AWS_PROFILE=oe-prod-data-analyst-mfa
+    CIRCLE_CI_TOKEN_BASE_64=********************
+    COLORFGBG=7;0
+    COLORTERM=truecolor
+    COMMAND_MODE=unix2003
+    EDITOR=vim
+    GIT_ASKPASS=********************
+    HOME=/Users/ve.gomez
+    ITERM_PROFILE=Default
+    ITERM_SESSION_ID=w0t0p0:13732491-AD2C-4AE5-8595-F1BB90507163
+    LANG=en_GB.UTF-8
+    LC_TERMINAL=iTerm2
+    LC_TERMINAL_VERSION=3.4.15
+    LESS=-R
+    LOGNAME=ve.gomez
+    LSCOLORS=Gxfxcxdxbxegedabagacad
+    LaunchInstanceID=593449EA-F088-482A-AB73-16F6A820D80A
+    MAKEFLAGS=
+    MAKELEVEL=1
+    MFLAGS=
+    MallocNanoZone=0
+    ORIGINAL_XDG_CURRENT_DESKTOP=undefined
+    PAGER=less
+    PATH=/Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin:/usr/local/Cellar/pipenv/2022.8.5/libexec/tools:/Users/ve.gomez/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/Users/ve.gomez/bin
+    PIPENV_ACTIVE=1
+    PIP_DISABLE_PIP_VERSION_CHECK=1
+    PIP_PYTHON_PATH=/usr/local/Cellar/pipenv/2022.8.5/libexec/bin/python3.10
+    PWD=/Users/ve.gomez/src/vvveracruz/podcaster/podcaster
+    PYTHONDONTWRITEBYTECODE=1
+    SECURITYSESSIONID=186a4
+    SHELL=/bin/zsh
+    SHLVL=3
+    SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.7w8R8igNa1/Listeners
+    TENTACLIO__SECRETS_FILE=********************
+    TERM=xterm-256color
+    TERM_PROGRAM=vscode
+    TERM_PROGRAM_VERSION=1.70.0
+    TERM_SESSION_ID=w0t0p0:13732491-AD2C-4AE5-8595-F1BB90507163
+    TMPDIR=/var/folders/_l/p09qm54d2kz523pc154x4c9m0000gn/T/
+    USER=ve.gomez
+    VIRTUAL_ENV=/Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf
+    VSCODE_GIT_ASKPASS_EXTRA_ARGS=********************
+    VSCODE_GIT_ASKPASS_MAIN=********************
+    VSCODE_GIT_ASKPASS_NODE=********************
+    VSCODE_GIT_IPC_HANDLE=/var/folders/_l/p09qm54d2kz523pc154x4c9m0000gn/T/vscode-git-c2b63d8a32.sock
+    VSCODE_INJECTION=1
+    XPC_FLAGS=0x0
+    XPC_SERVICE_NAME=0
+    ZDOTDIR=/var/folders/_l/p09qm54d2kz523pc154x4c9m0000gn/T/vscode-zsh
+    ZSH=/Users/ve.gomez/.oh-my-zsh
+    _=/usr/bin/make
+    __CFBundleIdentifier=com.microsoft.VSCode
+    __CF_USER_TEXT_ENCODING=0x1F5:0:2
+
+Briefcase Log:
+[19:36:24]                                                                                                                                                            __main__.py:21
+           Briefcase configuration error: Invalid pyproject.toml: Unclosed array (at line 64, column 18)                                                              __main__.py:22
+
+╭─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────╮
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/briefcase/config.py:444 in parse_config                                                 │
+│                                                                                                                                                                                  │
+│   441 │   │   format definitions.                                                             ╭────────────────────────── locals ──────────────────────────╮                     │
+│   442 │   """                                                                                 │   config_file = <_io.BufferedReader name='pyproject.toml'> │                     │
+│   443 │   try:                                                                                │ output_format = 'app'                                      │                     │
+│ ❱ 444 │   │   pyproject = tomllib.load(config_file)                                           │      platform = 'macOS'                                    │                     │
+│   445 │   │                                                                                   ╰────────────────────────────────────────────────────────────╯                     │
+│   446 │   │   global_config = pyproject["tool"]["briefcase"]                                                                                                                     │
+│   447 │   except tomllib.TOMLDecodeError as e:                                                                                                                                   │
+│                                                                                                                                                                                  │
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/tomli/_parser.py:66 in load                                                             │
+│                                                                                                                                                                                  │
+│    63 │   │   raise TypeError(                                                                                                                                                   │
+│    64 │   │   │   "File must be opened in binary mode, e.g. use `open('foo.toml', 'rb')`"                                                                                        │
+│    65 │   │   ) from None                                                                                                                                                        │
+│ ❱  66 │   return loads(s, parse_float=parse_float)                                                                                                                               │
+│    67                                                                                                                                                                            │
+│    68                                                                                                                                                                            │
+│    69 def loads(__s: str, *, parse_float: ParseFloat = float) -> dict[str, Any]:  # noqa: C901                                                                                   │
+│                                                                                                                                                                                  │
+│ ╭────────────────────────────────────────────────── locals ──────────────────────────────────────────────────╮                                                                   │
+│ │        __fp = <_io.BufferedReader name='pyproject.toml'>                                                   │                                                                   │
+│ │           b = b'[tool.briefcase]\nproject_name = "Podcaster"\nbundle = "cz.vgg"\nversion = "0.0.1"\n'+1262 │                                                                   │
+│ │ parse_float = <class 'float'>                                                                              │                                                                   │
+│ │           s = '[tool.briefcase]\nproject_name = "Podcaster"\nbundle = "cz.vgg"\nversion = "0.0.1"\n'+1262  │                                                                   │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                                   │
+│                                                                                                                                                                                  │
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/tomli/_parser.py:102 in loads                                                           │
+│                                                                                                                                                                                  │
+│    99 │   │   │   pos += 1                                                                                                                                                       │
+│   100 │   │   │   continue                                                                                                                                                       │
+│   101 │   │   if char in KEY_INITIAL_CHARS:                                                                                                                                      │
+│ ❱ 102 │   │   │   pos = key_value_rule(src, pos, out, header, parse_float)                                                                                                       │
+│   103 │   │   │   pos = skip_chars(src, pos, TOML_WS)                                                                                                                            │
+│   104 │   │   elif char == "[":                                                                                                                                                  │
+│   105 │   │   │   try:                                                                                                                                                           │
+│                                                                                                                                                                                  │
+│ ╭──────────────────────────────────────────────────────────── locals ────────────────────────────────────────────────────────────╮                                               │
+│ │         __s = '[tool.briefcase]\nproject_name = "Podcaster"\nbundle = "cz.vgg"\nversion = "0.0.1"\n'+1262                      │                                               │
+│ │        char = 'r'                                                                                                              │                                               │
+│ │      header = ('tool', 'briefcase', 'app', 'podcaster', 'android')                                                             │                                               │
+│ │         out = Output(data=<tomli._parser.NestedDict object at 0x103f377f0>, flags=<tomli._parser.Flags object at 0x10e987730>) │                                               │
+│ │ parse_float = <class 'float'>                                                                                                  │                                               │
+│ │         pos = 1250                                                                                                             │                                               │
+│ │ second_char = 't'                                                                                                              │                                               │
+│ │         src = '[tool.briefcase]\nproject_name = "Podcaster"\nbundle = "cz.vgg"\nversion = "0.0.1"\n'+1262                      │                                               │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                               │
+│                                                                                                                                                                                  │
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/tomli/_parser.py:326 in key_value_rule                                                  │
+│                                                                                                                                                                                  │
+│   323 def key_value_rule(                                                                                                                                                        │
+│   324 │   src: str, pos: Pos, out: Output, header: Key, parse_float: ParseFloat                                                                                                  │
+│   325 ) -> Pos:                                                                                                                                                                  │
+│ ❱ 326 │   pos, key, value = parse_key_value_pair(src, pos, parse_float)                                                                                                          │
+│   327 │   key_parent, key_stem = key[:-1], key[-1]                                                                                                                               │
+│   328 │   abs_key_parent = header + key_parent                                                                                                                                   │
+│   329                                                                                                                                                                            │
+│                                                                                                                                                                                  │
+│ ╭──────────────────────────────────────────────────────────── locals ────────────────────────────────────────────────────────────╮                                               │
+│ │      header = ('tool', 'briefcase', 'app', 'podcaster', 'android')                                                             │                                               │
+│ │         out = Output(data=<tomli._parser.NestedDict object at 0x103f377f0>, flags=<tomli._parser.Flags object at 0x10e987730>) │                                               │
+│ │ parse_float = <class 'float'>                                                                                                  │                                               │
+│ │         pos = 1250                                                                                                             │                                               │
+│ │         src = '[tool.briefcase]\nproject_name = "Podcaster"\nbundle = "cz.vgg"\nversion = "0.0.1"\n'+1262                      │                                               │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                               │
+│                                                                                                                                                                                  │
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/tomli/_parser.py:369 in parse_key_value_pair                                            │
+│                                                                                                                                                                                  │
+│   366 │   │   raise suffixed_err(src, pos, "Expected '=' after a key in a key/value pair")                                                                                       │
+│   367 │   pos += 1                                                                                                                                                               │
+│   368 │   pos = skip_chars(src, pos, TOML_WS)                                                                                                                                    │
+│ ❱ 369 │   pos, value = parse_value(src, pos, parse_float)                                                                                                                        │
+│   370 │   return pos, key, value                                                                                                                                                 │
+│   371                                                                                                                                                                            │
+│   372                                                                                                                                                                            │
+│                                                                                                                                                                                  │
+│ ╭───────────────────────────────────────────────── locals ──────────────────────────────────────────────────╮                                                                    │
+│ │        char = '='                                                                                         │                                                                    │
+│ │         key = ('requires',)                                                                               │                                                                    │
+│ │ parse_float = <class 'float'>                                                                             │                                                                    │
+│ │         pos = 1261                                                                                        │                                                                    │
+│ │         src = '[tool.briefcase]\nproject_name = "Podcaster"\nbundle = "cz.vgg"\nversion = "0.0.1"\n'+1262 │                                                                    │
+│ ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                                    │
+│                                                                                                                                                                                  │
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/tomli/_parser.py:616 in parse_value                                                     │
+│                                                                                                                                                                                  │
+│   613 │                                                                                                                                                                          │
+│   614 │   # Arrays                                                                                                                                                               │
+│   615 │   if char == "[":                                                                                                                                                        │
+│ ❱ 616 │   │   return parse_array(src, pos, parse_float)                                                                                                                          │
+│   617 │                                                                                                                                                                          │
+│   618 │   # Inline tables                                                                                                                                                        │
+│   619 │   if char == "{":                                                                                                                                                        │
+│                                                                                                                                                                                  │
+│ ╭───────────────────────────────────────────────── locals ──────────────────────────────────────────────────╮                                                                    │
+│ │        char = '['                                                                                         │                                                                    │
+│ │ parse_float = <class 'float'>                                                                             │                                                                    │
+│ │         pos = 1261                                                                                        │                                                                    │
+│ │         src = '[tool.briefcase]\nproject_name = "Podcaster"\nbundle = "cz.vgg"\nversion = "0.0.1"\n'+1262 │                                                                    │
+│ ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                                    │
+│                                                                                                                                                                                  │
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/tomli/_parser.py:428 in parse_array                                                     │
+│                                                                                                                                                                                  │
+│   425 │   │   if c == "]":                                                                                                                                                       │
+│   426 │   │   │   return pos + 1, array                                                                                                                                          │
+│   427 │   │   if c != ",":                                                                                                                                                       │
+│ ❱ 428 │   │   │   raise suffixed_err(src, pos, "Unclosed array")                                                                                                                 │
+│   429 │   │   pos += 1                                                                                                                                                           │
+│   430 │   │                                                                                                                                                                      │
+│   431 │   │   pos = skip_comments_and_array_ws(src, pos)                                                                                                                         │
+│                                                                                                                                                                                  │
+│ ╭───────────────────────────────────────────────── locals ──────────────────────────────────────────────────╮                                                                    │
+│ │       array = ['toga-android>=0.3.0.dev34', 'feedparser']                                                 │                                                                    │
+│ │           c = '='                                                                                         │                                                                    │
+│ │ parse_float = <class 'float'>                                                                             │                                                                    │
+│ │         pos = 1314                                                                                        │                                                                    │
+│ │         src = '[tool.briefcase]\nproject_name = "Podcaster"\nbundle = "cz.vgg"\nversion = "0.0.1"\n'+1262 │                                                                    │
+│ │         val = 'feedparser'                                                                                │                                                                    │
+│ ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                                    │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+TOMLDecodeError: Unclosed array (at line 64, column 18)
+
+The above exception was the direct cause of the following exception:
+
+╭─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────╮
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/briefcase/__main__.py:13 in main                                                        │
+│                                                                                                                                                                                  │
+│   10 │   command = None                                                                                                                                                          │
+│   11 │   try:                                                                                                                                                                    │
+│   12 │   │   command, options = parse_cmdline(sys.argv[1:])                                                                                                                      │
+│ ❱ 13 │   │   command.parse_config("pyproject.toml")                                                                                                                              │
+│   14 │   │   command(**options)                                                                                                                                                  │
+│   15 │   │   result = 0                                                                                                                                                          │
+│   16 │   except HelpText as e:                                                                                                                                                   │
+│                                                                                                                                                                                  │
+│ ╭───────────────────────────────────────────── locals ─────────────────────────────────────────────╮                                                                             │
+│ │ command = <briefcase.platforms.macOS.app.macOSAppUpdateCommand object at 0x10e987880>            │                                                                             │
+│ │       e = BriefcaseConfigError('Invalid pyproject.toml: Unclosed array (at line 64, column 18)') │                                                                             │
+│ │     log = <briefcase.console.Log object at 0x103fb0190>                                          │                                                                             │
+│ │ options = {'update_dependencies': False, 'update_resources': False}                              │                                                                             │
+│ │  result = 100                                                                                    │                                                                             │
+│ ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯                                                                             │
+│                                                                                                                                                                                  │
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/briefcase/commands/base.py:440 in parse_config                                          │
+│                                                                                                                                                                                  │
+│   437 │   │   │   │   # Parse the content of the pyproject.toml file, extracting                                                                                                 │
+│   438 │   │   │   │   # any platform and output format configuration for each app,                                                                                               │
+│   439 │   │   │   │   # creating a single set of configuration options.                                                                                                          │
+│ ❱ 440 │   │   │   │   global_config, app_configs = parse_config(                                                                                                                 │
+│   441 │   │   │   │   │   config_file,                                                                                                                                           │
+│   442 │   │   │   │   │   platform=self.platform,                                                                                                                                │
+│   443 │   │   │   │   │   output_format=self.output_format,                                                                                                                      │
+│                                                                                                                                                                                  │
+│ ╭───────────────────────────────────────── locals ──────────────────────────────────────────╮                                                                                    │
+│ │ config_file = <_io.BufferedReader name='pyproject.toml'>                                  │                                                                                    │
+│ │    filename = 'pyproject.toml'                                                            │                                                                                    │
+│ │        self = <briefcase.platforms.macOS.app.macOSAppUpdateCommand object at 0x10e987880> │                                                                                    │
+│ ╰───────────────────────────────────────────────────────────────────────────────────────────╯                                                                                    │
+│                                                                                                                                                                                  │
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/briefcase/config.py:448 in parse_config                                                 │
+│                                                                                                                                                                                  │
+│   445 │   │                                                                                   ╭────────────────────────── locals ──────────────────────────╮                     │
+│   446 │   │   global_config = pyproject["tool"]["briefcase"]                                  │   config_file = <_io.BufferedReader name='pyproject.toml'> │                     │
+│   447 │   except tomllib.TOMLDecodeError as e:                                                │ output_format = 'app'                                      │                     │
+│ ❱ 448 │   │   raise BriefcaseConfigError(f"Invalid pyproject.toml: {e}") from e               │      platform = 'macOS'                                    │                     │
+│   449 │   except KeyError as e:                                                               ╰────────────────────────────────────────────────────────────╯                     │
+│   450 │   │   raise BriefcaseConfigError("No tool.briefcase section in pyproject.toml") from                                                                                     │
+│   451                                                                                                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+BriefcaseConfigError: Briefcase configuration error: Invalid pyproject.toml: Unclosed array (at line 64, column 18)

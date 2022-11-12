@@ -1,0 +1,349 @@
+Date/Time:       2022-08-14 09:25:03 
+Command line:    /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin/briefcase run android -d @beePhone
+
+OS Release:      Darwin 21.6.0
+OS Version:      Darwin Kernel Version 21.6.0: Sat Jun 18 17:07:25 PDT 2022; root:xnu-8020.140.41~1/RELEASE_X86_64
+Architecture:    x86_64
+Platform:        macOS-12.5-x86_64-i386-64bit
+
+Python exe:      /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin/python
+Python version:  3.10.6 (main, Aug 11 2022, 13:49:25) [Clang 13.1.6 (clang-1316.0.21.2.5)]
+Virtual env:     True
+Conda env:       False
+
+Briefcase:       0.3.8
+Target platform: android
+Target format:   gradle
+
+Environment Variables:
+    APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL=true
+    AWS_MFA_DURATION=28800
+    AWS_PROFILE=oe-prod-data-analyst-mfa
+    CIRCLE_CI_TOKEN_BASE_64=********************
+    COLORFGBG=7;0
+    COLORTERM=truecolor
+    COMMAND_MODE=unix2003
+    EDITOR=vim
+    GIT_ASKPASS=********************
+    HOME=/Users/ve.gomez
+    ITERM_PROFILE=Default
+    ITERM_SESSION_ID=w0t0p0:13732491-AD2C-4AE5-8595-F1BB90507163
+    LANG=en_GB.UTF-8
+    LC_TERMINAL=iTerm2
+    LC_TERMINAL_VERSION=3.4.15
+    LESS=-R
+    LOGNAME=ve.gomez
+    LSCOLORS=Gxfxcxdxbxegedabagacad
+    LaunchInstanceID=593449EA-F088-482A-AB73-16F6A820D80A
+    MAKEFLAGS=
+    MAKELEVEL=1
+    MFLAGS=
+    MallocNanoZone=0
+    ORIGINAL_XDG_CURRENT_DESKTOP=undefined
+    PAGER=less
+    PATH=/Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin:/usr/local/Cellar/pipenv/2022.8.13/libexec/tools:/Users/ve.gomez/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/Users/ve.gomez/bin
+    PIPENV_ACTIVE=1
+    PIP_DISABLE_PIP_VERSION_CHECK=1
+    PIP_PYTHON_PATH=/usr/local/Cellar/pipenv/2022.8.13/libexec/bin/python3.10
+    PWD=/Users/ve.gomez/src/vvveracruz/podcaster/podcaster
+    PYTHONDONTWRITEBYTECODE=1
+    SECURITYSESSIONID=186a4
+    SHELL=/bin/zsh
+    SHLVL=3
+    SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.7w8R8igNa1/Listeners
+    TENTACLIO__SECRETS_FILE=********************
+    TERM=xterm-256color
+    TERM_PROGRAM=vscode
+    TERM_PROGRAM_VERSION=1.70.0
+    TERM_SESSION_ID=w0t0p0:13732491-AD2C-4AE5-8595-F1BB90507163
+    TMPDIR=/var/folders/_l/p09qm54d2kz523pc154x4c9m0000gn/T/
+    USER=ve.gomez
+    VIRTUAL_ENV=/Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf
+    VSCODE_GIT_ASKPASS_EXTRA_ARGS=********************
+    VSCODE_GIT_ASKPASS_MAIN=********************
+    VSCODE_GIT_ASKPASS_NODE=********************
+    VSCODE_GIT_IPC_HANDLE=/var/folders/_l/p09qm54d2kz523pc154x4c9m0000gn/T/vscode-git-c2b63d8a32.sock
+    VSCODE_INJECTION=1
+    XPC_FLAGS=0x0
+    XPC_SERVICE_NAME=0
+    ZDOTDIR=/var/folders/_l/p09qm54d2kz523pc154x4c9m0000gn/T/vscode-zsh
+    ZSH=/Users/ve.gomez/.oh-my-zsh
+    _=/usr/bin/make
+    __CFBundleIdentifier=com.microsoft.VSCode
+    __CF_USER_TEXT_ENCODING=0x1F5:0:2
+
+Briefcase Log:
+[09:24:50]                                                                                                                                                         subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /usr/libexec/java_home                                                                                                                          subprocess.py:435
+           >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     The operation couldn’t be completed. Unable to locate a Java Runtime.                                                                           subprocess.py:455
+           >>>     Please visit http://www.java.com for information on installing Java.                                                                            subprocess.py:455
+           >>>                                                                                                                                                     subprocess.py:455
+           >>> Return code: 1                                                                                                                                      subprocess.py:464
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/cmdline-tools/latest/bin/sdkmanager --list_installed                                               subprocess.py:435
+           >>> Environment Overrides:                                                                                                                              subprocess.py:446
+           >>>     ANDROID_SDK_ROOT=/Users/ve.gomez/.briefcase/tools/android_sdk                                                                                   subprocess.py:448
+           >>>     JAVA_HOME=/Users/ve.gomez/.briefcase/tools/java/Contents/Home                                                                                   subprocess.py:448
+[09:24:51] >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     Loading package information...                                                                                                                  subprocess.py:455
+           >>>     Loading local repository...                                                                                                                     subprocess.py:455
+           >>>     [=========                              ] 25% Loading local repository...                                                                       subprocess.py:455
+           >>>     [=========                              ] 25% Fetch remote repository...                                                                        subprocess.py:455
+           >>>     [=======================================] 100% Fetch remote repository...                                                                       subprocess.py:455
+           >>>     Installed packages:                                                                                                                             subprocess.py:455
+           >>>       Path                                    | Version      | Description                     | Location                                           subprocess.py:455
+           >>>       -------                                 | -------      | -------                         | -------                                            subprocess.py:455
+           >>>       build-tools;30.0.2                      | 30.0.2       | Android SDK Build-Tools 30.0.2  | build-tools/30.0.2                                 subprocess.py:455
+           >>>       cmake;3.10.2.4988404                    | 3.10.2       | CMake 3.10.2.4988404            | cmake/3.10.2.4988404                               subprocess.py:455
+           >>>       emulator                                | 31.3.10      | Android Emulator                | emulator                                           subprocess.py:455
+           >>>       ndk;21.4.7075529                        | 21.4.7075529 | NDK (Side by side) 21.4.7075529 | ndk/21.4.7075529                                   subprocess.py:455
+           >>>       patcher;v4                              | 1            | SDK Patch Applier v4            | patcher/v4                                         subprocess.py:455
+           >>>       platform-tools                          | 33.0.2       | Android SDK Platform-Tools      | platform-tools                                     subprocess.py:455
+           >>>       platforms;android-32                    | 1            | Android SDK Platform 32         | platforms/android-32                               subprocess.py:455
+           >>>       system-images;android-31;default;x86_64 | 3            | Intel x86 Atom_64 System Image  | system-images/android-31/default/x86_64            subprocess.py:455
+           >>>                                                                                                                                                     subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+           >>> Android emulator is already installed.                                                                                                             android_sdk.py:422
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb devices -l                                                                      subprocess.py:435
+           >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     List of devices attached                                                                                                                        subprocess.py:455
+           >>>                                                                                                                                                     subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/emulator/emulator -list-avds                                                                       subprocess.py:435
+           >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     beePhone                                                                                                                                        subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+           >>> Device skin 'pixel_3a' already exists.                                                                                                             android_sdk.py:583
+                                                                                                                                                                       gradle.py:192
+           [podcaster] Starting emulator beePhone...                                                                                                                   gradle.py:192
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/emulator/emulator -list-avds                                                                       subprocess.py:435
+           >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     beePhone                                                                                                                                        subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/emulator/emulator @beePhone -dns-server 8.8.8.8                                                    subprocess.py:435
+           >>> Environment Overrides:                                                                                                                              subprocess.py:446
+           >>>     ANDROID_SDK_ROOT=/Users/ve.gomez/.briefcase/tools/android_sdk                                                                                   subprocess.py:448
+           >>>     JAVA_HOME=/Users/ve.gomez/.briefcase/tools/java/Contents/Home                                                                                   subprocess.py:448
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb devices -l                                                                      subprocess.py:435
+           >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     List of devices attached                                                                                                                        subprocess.py:455
+           >>>                                                                                                                                                     subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+[09:24:53]                                                                                                                                                         subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb devices -l                                                                      subprocess.py:435
+           >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     List of devices attached                                                                                                                        subprocess.py:455
+           >>>     emulator-5554          offline transport_id:24                                                                                                  subprocess.py:455
+           >>>                                                                                                                                                     subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+[09:24:55]                                                                                                                                                         subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb devices -l                                                                      subprocess.py:435
+[09:24:56] >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     List of devices attached                                                                                                                        subprocess.py:455
+           >>>     emulator-5554          offline transport_id:24                                                                                                  subprocess.py:455
+           >>>                                                                                                                                                     subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+[09:24:58]                                                                                                                                                         subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb devices -l                                                                      subprocess.py:435
+           >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     List of devices attached                                                                                                                        subprocess.py:455
+           >>>     emulator-5554          device product:sdk_phone64_x86_64 model:Android_SDK_built_for_x86_64 device:emulator64_x86_64 transport_id:24            subprocess.py:455
+           >>>                                                                                                                                                     subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb -s emulator-5554 emu avd name                                                   subprocess.py:435
+           >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     beePhone                                                                                                                                        subprocess.py:455
+           >>>     OK                                                                                                                                              subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+[09:25:00] Starting emulator... done                                                                                                                             android_sdk.py:1018
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb -s emulator-5554 shell getprop sys.boot_completed                               subprocess.py:435
+           >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     1                                                                                                                                               subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+                                                                                                                                                                       gradle.py:195
+           [podcaster] Starting app on @beePhone (running emulator) (device ID emulator-5554)                                                                          gradle.py:195
+                                                                                                                                                                       gradle.py:207
+           [podcaster] Installing app...                                                                                                                               gradle.py:207
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb -s emulator-5554 shell am force-stop cz.vgg.podcaster                           subprocess.py:435
+[09:25:02] >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     error: closed                                                                                                                                   subprocess.py:455
+           >>> Return code: 1                                                                                                                                      subprocess.py:464
+           Stopping old versions of the app...                                                                                                                         gradle.py:208
+                                                                                                                                                                      __main__.py:21
+           Unable to force stop app cz.vgg.podcaster on emulator-5554                                                                                                 __main__.py:22
+
+╭─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────╮
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/briefcase/integrations/android_sdk.py:1187 in force_stop_app                            │
+│                                                                                                                                                                                  │
+│   1184 │   │   # as you pass a package name, even if the package does not exist, or the        ╭───────────────────────────────── locals ─────────────────────────────────╮      │
+│   1185 │   │   # package is not running.                                                       │ package = 'cz.vgg.podcaster'                                             │      │
+│   1186 │   │   try:                                                                            │    self = <briefcase.integrations.android_sdk.ADB object at 0x1155675b0> │      │
+│ ❱ 1187 │   │   │   self.run("shell", "am", "force-stop", package)                              ╰──────────────────────────────────────────────────────────────────────────╯      │
+│   1188 │   │   except subprocess.CalledProcessError as e:                                                                                                                        │
+│   1189 │   │   │   raise BriefcaseCommandError(                                                                                                                                  │
+│   1190 │   │   │   │   f"Unable to force stop app {package} on {self.device}"                                                                                                    │
+│                                                                                                                                                                                  │
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/briefcase/integrations/android_sdk.py:1145 in run                                       │
+│                                                                                                                                                                                  │
+│   1142 │   │   try:                                                                            ╭────────────────────────────────── locals ──────────────────────────────────╮    │
+│   1143 │   │   │   # Capture `stderr` so that if the process exits with failure, the           │ arguments = ('shell', 'am', 'force-stop', 'cz.vgg.podcaster')              │    │
+│   1144 │   │   │   # stderr data is in `e.output`.                                             │      self = <briefcase.integrations.android_sdk.ADB object at 0x1155675b0> │    │
+│ ❱ 1145 │   │   │   return self.command.subprocess.check_output(                                ╰────────────────────────────────────────────────────────────────────────────╯    │
+│   1146 │   │   │   │   [                                                                                                                                                         │
+│   1147 │   │   │   │   │   os.fsdecode(self.android_sdk.adb_path),                                                                                                               │
+│   1148 │   │   │   │   │   "-s",                                                                                                                                                 │
+│                                                                                                                                                                                  │
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/briefcase/integrations/subprocess.py:297 in check_output                                │
+│                                                                                                                                                                                  │
+│   294 │   │   self._log_environment(kwargs.get("env"))                                                                                                                           │
+│   295 │   │                                                                                                                                                                      │
+│   296 │   │   try:                                                                                                                                                               │
+│ ❱ 297 │   │   │   cmd_output = self._subprocess.check_output(                                                                                                                    │
+│   298 │   │   │   │   [str(arg) for arg in args], **self.final_kwargs(**kwargs)                                                                                                  │
+│   299 │   │   │   )                                                                                                                                                              │
+│   300 │   │   except subprocess.CalledProcessError as e:                                                                                                                         │
+│                                                                                                                                                                                  │
+│ ╭─────────────────────────────────────────────────────────────────────── locals ───────────────────────────────────────────────────────────────────────╮                         │
+│ │   args = ['/Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb', '-s', 'emulator-5554', 'shell', 'am', 'force-stop', 'cz.vgg.podcaster'] │                         │
+│ │ kwargs = {'stderr': -2}                                                                                                                              │                         │
+│ │   self = <briefcase.integrations.subprocess.Subprocess object at 0x11532f9a0>                                                                        │                         │
+│ ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                         │
+│                                                                                                                                                                                  │
+│ /usr/local/Cellar/python@3.10/3.10.6_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py:420 in check_output                                                │
+│                                                                                                                                                                                  │
+│    417 │   │   │   empty = b''                                                                                                                                                   │
+│    418 │   │   kwargs['input'] = empty                                                                                                                                           │
+│    419 │                                                                                                                                                                         │
+│ ❱  420 │   return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,                                                                                                      │
+│    421 │   │   │      **kwargs).stdout                                                                                                                                           │
+│    422                                                                                                                                                                           │
+│    423                                                                                                                                                                           │
+│                                                                                                                                                                                  │
+│ ╭────────────────────────────────────────────────────────────────────────── locals ──────────────────────────────────────────────────────────────────────────╮                   │
+│ │    kwargs = {'stderr': -2, 'text': True, 'encoding': 'UTF-8'}                                                                                              │                   │
+│ │ popenargs = (['/Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb', '-s', 'emulator-5554', 'shell', 'am', 'force-stop', 'cz.vgg.podcaster'],) │                   │
+│ │   timeout = None                                                                                                                                           │                   │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                   │
+│                                                                                                                                                                                  │
+│ /usr/local/Cellar/python@3.10/3.10.6_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py:524 in run                                                         │
+│                                                                                                                                                                                  │
+│    521 │   │   │   raise                                                                                                                                                         │
+│    522 │   │   retcode = process.poll()                                                                                                                                          │
+│    523 │   │   if check and retcode:                                                                                                                                             │
+│ ❱  524 │   │   │   raise CalledProcessError(retcode, process.args,                                                                                                               │
+│    525 │   │   │   │   │   │   │   │   │    output=stdout, stderr=stderr)                                                                                                        │
+│    526 │   return CompletedProcess(process.args, retcode, stdout, stderr)                                                                                                        │
+│    527                                                                                                                                                                           │
+│                                                                                                                                                                                  │
+│ ╭──────────────────────────────────────────────────────────────────────────── locals ─────────────────────────────────────────────────────────────────────────────╮              │
+│ │ capture_output = False                                                                                                                                          │              │
+│ │          check = True                                                                                                                                           │              │
+│ │          input = None                                                                                                                                           │              │
+│ │         kwargs = {'stdout': -1, 'stderr': -2, 'text': True, 'encoding': 'UTF-8'}                                                                                │              │
+│ │      popenargs = (['/Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb', '-s', 'emulator-5554', 'shell', 'am', 'force-stop', 'cz.vgg.podcaster'],) │              │
+│ │        process = <Popen: returncode: 1 args: ['/Users/ve.gomez/.briefcase/tools/android_sdk/p...>                                                               │              │
+│ │        retcode = 1                                                                                                                                              │              │
+│ │         stderr = None                                                                                                                                           │              │
+│ │         stdout = 'error: closed\n'                                                                                                                              │              │
+│ │        timeout = None                                                                                                                                           │              │
+│ ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯              │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+CalledProcessError: Command '['/Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb', '-s', 'emulator-5554', 'shell', 'am', 'force-stop', 'cz.vgg.podcaster']' returned non-zero exit status 1.
+
+The above exception was the direct cause of the following exception:
+
+╭─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────╮
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/briefcase/__main__.py:14 in main                                                        │
+│                                                                                                                                                                                  │
+│   11 │   try:                                                                                                                                                                    │
+│   12 │   │   command, options = parse_cmdline(sys.argv[1:])                                                                                                                      │
+│   13 │   │   command.parse_config("pyproject.toml")                                                                                                                              │
+│ ❱ 14 │   │   command(**options)                                                                                                                                                  │
+│   15 │   │   result = 0                                                                                                                                                          │
+│   16 │   except HelpText as e:                                                                                                                                                   │
+│   17 │   │   log.info()                                                                                                                                                          │
+│                                                                                                                                                                                  │
+│ ╭─────────────────────────────────────────── locals ────────────────────────────────────────────╮                                                                                │
+│ │ command = <briefcase.platforms.android.gradle.GradleRunCommand object at 0x10c526aa0>         │                                                                                │
+│ │       e = BriefcaseCommandError('Unable to force stop app cz.vgg.podcaster on emulator-5554') │                                                                                │
+│ │     log = <briefcase.console.Log object at 0x10a8d81f0>                                       │                                                                                │
+│ │ options = {'appname': None, 'update': False, 'device_or_avd': '@beePhone'}                    │                                                                                │
+│ │  result = 200                                                                                 │                                                                                │
+│ ╰───────────────────────────────────────────────────────────────────────────────────────────────╯                                                                                │
+│                                                                                                                                                                                  │
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/briefcase/commands/run.py:66 in __call__                                                │
+│                                                                                                                                                                                  │
+│   63 │   │   else:                                                                                                                                                               │
+│   64 │   │   │   state = None                                                                                                                                                    │
+│   65 │   │                                                                                                                                                                       │
+│ ❱ 66 │   │   state = self.run_app(app, **full_options(state, options))                                                                                                           │
+│   67 │   │                                                                                                                                                                       │
+│   68 │   │   return state                                                                                                                                                        │
+│   69                                                                                                                                                                             │
+│                                                                                                                                                                                  │
+│ ╭────────────────────────────────────────────────────────────────────── locals ──────────────────────────────────────────────────────────────────────╮                           │
+│ │           app = <cz.vgg.podcaster v0.0.1 AppConfig>                                                                                                │                           │
+│ │       appname = None                                                                                                                               │                           │
+│ │   binary_file = PosixPath('/Users/ve.gomez/src/vvveracruz/podcaster/podcaster/android/gradle/Podcaster/app/build/outputs/apk/debug/app-debug.apk') │                           │
+│ │       options = {'device_or_avd': '@beePhone'}                                                                                                     │                           │
+│ │          self = <briefcase.platforms.android.gradle.GradleRunCommand object at 0x10c526aa0>                                                        │                           │
+│ │         state = None                                                                                                                               │                           │
+│ │ template_file = PosixPath('/Users/ve.gomez/src/vvveracruz/podcaster/podcaster/android/gradle/Podcaster')                                           │                           │
+│ │        update = False                                                                                                                              │                           │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                           │
+│                                                                                                                                                                                  │
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/briefcase/platforms/android/gradle.py:209 in run_app                                    │
+│                                                                                                                                                                                  │
+│   206 │   │   # We force-stop the app to ensure the activity launches freshly.                                                                                                   │
+│   207 │   │   self.logger.info("Installing app...", prefix=app.app_name)                                                                                                         │
+│   208 │   │   with self.input.wait_bar("Stopping old versions of the app..."):                                                                                                   │
+│ ❱ 209 │   │   │   adb.force_stop_app(package)                                                                                                                                    │
+│   210 │   │                                                                                                                                                                      │
+│   211 │   │   # Install the latest APK file onto the device.                                                                                                                     │
+│   212 │   │   with self.input.wait_bar("Installing new app version..."):                                                                                                         │
+│                                                                                                                                                                                  │
+│ ╭────────────────────────────────────────── locals ───────────────────────────────────────────╮                                                                                  │
+│ │           adb = <briefcase.integrations.android_sdk.ADB object at 0x1155675b0>              │                                                                                  │
+│ │           app = <cz.vgg.podcaster v0.0.1 AppConfig>                                         │                                                                                  │
+│ │           avd = 'beePhone'                                                                  │                                                                                  │
+│ │        device = 'emulator-5554'                                                             │                                                                                  │
+│ │ device_or_avd = '@beePhone'                                                                 │                                                                                  │
+│ │        kwargs = {}                                                                          │                                                                                  │
+│ │          name = '@beePhone (running emulator)'                                              │                                                                                  │
+│ │       package = 'cz.vgg.podcaster'                                                          │                                                                                  │
+│ │          self = <briefcase.platforms.android.gradle.GradleRunCommand object at 0x10c526aa0> │                                                                                  │
+│ ╰─────────────────────────────────────────────────────────────────────────────────────────────╯                                                                                  │
+│                                                                                                                                                                                  │
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/briefcase/integrations/android_sdk.py:1189 in force_stop_app                            │
+│                                                                                                                                                                                  │
+│   1186 │   │   try:                                                                            ╭───────────────────────────────── locals ─────────────────────────────────╮      │
+│   1187 │   │   │   self.run("shell", "am", "force-stop", package)                              │ package = 'cz.vgg.podcaster'                                             │      │
+│   1188 │   │   except subprocess.CalledProcessError as e:                                      │    self = <briefcase.integrations.android_sdk.ADB object at 0x1155675b0> │      │
+│ ❱ 1189 │   │   │   raise BriefcaseCommandError(                                                ╰──────────────────────────────────────────────────────────────────────────╯      │
+│   1190 │   │   │   │   f"Unable to force stop app {package} on {self.device}"                                                                                                    │
+│   1191 │   │   │   ) from e                                                                                                                                                      │
+│   1192                                                                                                                                                                           │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+BriefcaseCommandError: Unable to force stop app cz.vgg.podcaster on emulator-5554

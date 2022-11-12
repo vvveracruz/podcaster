@@ -13,6 +13,9 @@ description = "The queuer of dreams."
 icon = "src/podcaster/resources/podcaster"
 sources = ['src/podcaster']
 requires = [
+    "feedparser", 
+    "requests", 
+    "pygame"
 ]
 
 
@@ -60,5 +63,5 @@ requires = [
 
 [tool.briefcase.app.podcaster.android]
 requires = [
-    'toga-android>=0.3.0.dev34'
+    'toga-android>=0.3.0.dev35'
 ]

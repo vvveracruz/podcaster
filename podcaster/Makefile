@@ -8,25 +8,24 @@ init-android:
 	pipenv run briefcase create android
 	
 dev-run:
+	pipenv install --dev
 	pipenv run briefcase dev
 
-lint: 
-	pipenv run black src/
-
-build:
-	pipenv run briefcase update
+macos-run:
+	pipenv run briefcase update -d
 	pipenv run briefcase build
-
-package:
-	pipenv run briefcase build
-	pipenv run briefcase package --no-sign
-
-run:
-	pipenv run briefcase --update run
+	pipenv run briefcase run
 
 android-run:
-	pipenv run briefcase --update run android
+	pipenv run briefcase update android -d
+	pipenv run briefcase build android
+	pipenv run briefcase run android -d @beePhone
+
+## dev utils
 
 clean:
 	rm *.log
+
+lint: 
+	pipenv run black src/
 

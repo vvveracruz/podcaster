@@ -1,0 +1,295 @@
+Date/Time:       2022-08-14 13:16:15 
+Command line:    /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin/briefcase update android -d
+
+OS Release:      Darwin 21.6.0
+OS Version:      Darwin Kernel Version 21.6.0: Sat Jun 18 17:07:25 PDT 2022; root:xnu-8020.140.41~1/RELEASE_X86_64
+Architecture:    x86_64
+Platform:        macOS-12.5-x86_64-i386-64bit
+
+Python exe:      /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin/python
+Python version:  3.10.6 (main, Aug 11 2022, 13:49:25) [Clang 13.1.6 (clang-1316.0.21.2.5)]
+Virtual env:     True
+Conda env:       False
+
+Briefcase:       0.3.8
+Target platform: android
+Target format:   gradle
+
+Environment Variables:
+    APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL=true
+    AWS_MFA_DURATION=28800
+    AWS_PROFILE=oe-prod-data-analyst-mfa
+    CIRCLE_CI_TOKEN_BASE_64=********************
+    COLORFGBG=7;0
+    COLORTERM=truecolor
+    COMMAND_MODE=unix2003
+    EDITOR=vim
+    GIT_ASKPASS=********************
+    HOME=/Users/ve.gomez
+    ITERM_PROFILE=Default
+    ITERM_SESSION_ID=w0t0p0:13732491-AD2C-4AE5-8595-F1BB90507163
+    LANG=en_GB.UTF-8
+    LC_TERMINAL=iTerm2
+    LC_TERMINAL_VERSION=3.4.15
+    LESS=-R
+    LOGNAME=ve.gomez
+    LSCOLORS=Gxfxcxdxbxegedabagacad
+    LaunchInstanceID=593449EA-F088-482A-AB73-16F6A820D80A
+    MAKEFLAGS=
+    MAKELEVEL=1
+    MFLAGS=
+    MallocNanoZone=0
+    ORIGINAL_XDG_CURRENT_DESKTOP=undefined
+    PAGER=less
+    PATH=/Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin:/usr/local/Cellar/pipenv/2022.8.13/libexec/tools:/Users/ve.gomez/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/Users/ve.gomez/bin
+    PIPENV_ACTIVE=1
+    PIP_DISABLE_PIP_VERSION_CHECK=1
+    PIP_PYTHON_PATH=/usr/local/Cellar/pipenv/2022.8.13/libexec/bin/python3.10
+    PWD=/Users/ve.gomez/src/vvveracruz/podcaster/podcaster
+    PYTHONDONTWRITEBYTECODE=1
+    SECURITYSESSIONID=186a4
+    SHELL=/bin/zsh
+    SHLVL=3
+    SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.7w8R8igNa1/Listeners
+    TENTACLIO__SECRETS_FILE=********************
+    TERM=xterm-256color
+    TERM_PROGRAM=vscode
+    TERM_PROGRAM_VERSION=1.70.0
+    TERM_SESSION_ID=w0t0p0:13732491-AD2C-4AE5-8595-F1BB90507163
+    TMPDIR=/var/folders/_l/p09qm54d2kz523pc154x4c9m0000gn/T/
+    USER=ve.gomez
+    VIRTUAL_ENV=/Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf
+    VSCODE_GIT_ASKPASS_EXTRA_ARGS=********************
+    VSCODE_GIT_ASKPASS_MAIN=********************
+    VSCODE_GIT_ASKPASS_NODE=********************
+    VSCODE_GIT_IPC_HANDLE=/var/folders/_l/p09qm54d2kz523pc154x4c9m0000gn/T/vscode-git-c2b63d8a32.sock
+    VSCODE_INJECTION=1
+    XPC_FLAGS=0x0
+    XPC_SERVICE_NAME=0
+    ZDOTDIR=/var/folders/_l/p09qm54d2kz523pc154x4c9m0000gn/T/vscode-zsh
+    ZSH=/Users/ve.gomez/.oh-my-zsh
+    _=/usr/bin/make
+    __CFBundleIdentifier=com.microsoft.VSCode
+    __CF_USER_TEXT_ENCODING=0x1F5:0:2
+
+Briefcase Log:
+[13:16:12]                                                                                                                                                         subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /usr/libexec/java_home                                                                                                                          subprocess.py:435
+           >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     The operation couldn’t be completed. Unable to locate a Java Runtime.                                                                           subprocess.py:455
+           >>>     Please visit http://www.java.com for information on installing Java.                                                                            subprocess.py:455
+           >>>                                                                                                                                                     subprocess.py:455
+           >>> Return code: 1                                                                                                                                      subprocess.py:464
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/cmdline-tools/latest/bin/sdkmanager --list_installed                                               subprocess.py:435
+           >>> Environment Overrides:                                                                                                                              subprocess.py:446
+           >>>     ANDROID_SDK_ROOT=/Users/ve.gomez/.briefcase/tools/android_sdk                                                                                   subprocess.py:448
+           >>>     JAVA_HOME=/Users/ve.gomez/.briefcase/tools/java/Contents/Home                                                                                   subprocess.py:448
+[13:16:13] >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     Loading package information...                                                                                                                  subprocess.py:455
+           >>>     Loading local repository...                                                                                                                     subprocess.py:455
+           >>>     [=========                              ] 25% Loading local repository...                                                                       subprocess.py:455
+           >>>     [=========                              ] 25% Fetch remote repository...                                                                        subprocess.py:455
+           >>>     [=======================================] 100% Fetch remote repository...                                                                       subprocess.py:455
+           >>>     Installed packages:                                                                                                                             subprocess.py:455
+           >>>       Path                                    | Version      | Description                     | Location                                           subprocess.py:455
+           >>>       -------                                 | -------      | -------                         | -------                                            subprocess.py:455
+           >>>       build-tools;30.0.2                      | 30.0.2       | Android SDK Build-Tools 30.0.2  | build-tools/30.0.2                                 subprocess.py:455
+           >>>       cmake;3.10.2.4988404                    | 3.10.2       | CMake 3.10.2.4988404            | cmake/3.10.2.4988404                               subprocess.py:455
+           >>>       emulator                                | 31.3.10      | Android Emulator                | emulator                                           subprocess.py:455
+           >>>       ndk;21.4.7075529                        | 21.4.7075529 | NDK (Side by side) 21.4.7075529 | ndk/21.4.7075529                                   subprocess.py:455
+           >>>       patcher;v4                              | 1            | SDK Patch Applier v4            | patcher/v4                                         subprocess.py:455
+           >>>       platform-tools                          | 33.0.2       | Android SDK Platform-Tools      | platform-tools                                     subprocess.py:455
+           >>>       platforms;android-32                    | 1            | Android SDK Platform 32         | platforms/android-32                               subprocess.py:455
+           >>>       system-images;android-31;default;x86_64 | 3            | Intel x86 Atom_64 System Image  | system-images/android-31/default/x86_64            subprocess.py:455
+           >>>                                                                                                                                                     subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+                                                                                                                                                                        update.py:48
+           [podcaster] Updating dependencies...                                                                                                                         update.py:48
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin/python -m pip install --upgrade --no-user --progress-bar off                    subprocess.py:435
+           --target=/Users/ve.gomez/src/vvveracruz/podcaster/podcaster/android/gradle/Podcaster/app/src/main/assets/python/app_packages feedparser requests pygame                  
+           'toga-android>=0.3.0'                                                                                                                                                    
+[13:16:14] Collecting feedparser                                                                                                                                   subprocess.py:406
+             Using cached feedparser-6.0.10-py3-none-any.whl (81 kB)                                                                                               subprocess.py:406
+           Collecting requests                                                                                                                                     subprocess.py:406
+             Using cached requests-2.28.1-py3-none-any.whl (62 kB)                                                                                                 subprocess.py:406
+[13:16:15] Collecting pygame                                                                                                                                       subprocess.py:406
+             Using cached pygame-2.1.2-cp310-cp310-macosx_10_9_x86_64.whl (8.9 MB)                                                                                 subprocess.py:406
+           ERROR: Could not find a version that satisfies the requirement toga-android>=0.3.0 (from versions: 0.2.5, 0.2.6, 0.2.7, 0.2.8, 0.2.9, 0.2.10, 0.2.11,   subprocess.py:406
+           0.2.12, 0.2.13, 0.2.14, 0.2.15, 0.3.0.dev1, 0.3.0.dev2, 0.3.0.dev3, 0.3.0.dev4, 0.3.0.dev5, 0.3.0.dev6, 0.3.0.dev7, 0.3.0.dev8, 0.3.0.dev9,                              
+           0.3.0.dev10, 0.3.0.dev11, 0.3.0.dev12, 0.3.0.dev13, 0.3.0.dev14, 0.3.0.dev15, 0.3.0.dev16, 0.3.0.dev17, 0.3.0.dev18, 0.3.0.dev19, 0.3.0.dev20,                           
+           0.3.0.dev21, 0.3.0.dev22, 0.3.0.dev23, 0.3.0.dev24, 0.3.0.dev25, 0.3.0.dev26, 0.3.0.dev27, 0.3.0.dev28, 0.3.0.dev29, 0.3.0.dev30, 0.3.0.dev32,                           
+           0.3.0.dev33, 0.3.0.dev34, 0.3.0.dev35)                                                                                                                                   
+           ERROR: No matching distribution found for toga-android>=0.3.0                                                                                           subprocess.py:406
+           >>> Return code: 1                                                                                                                                      subprocess.py:464
+           Installing app dependencies...                                                                                                                              create.py:378
+                                                                                                                                                                      __main__.py:21
+           Unable to install dependencies. This may be because one of your                                                                                            __main__.py:22
+           dependencies is invalid, or because pip was unable to connect                                                                                              __main__.py:22
+           to the PyPI server.                                                                                                                                        __main__.py:22
+
+╭─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────╮
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/briefcase/commands/create.py:380 in install_app_dependencies                            │
+│                                                                                                                                                                                  │
+│   377 │   │   if app.requires:                                                                                                                                                   │
+│   378 │   │   │   with self.input.wait_bar("Installing app dependencies..."):                                                                                                    │
+│   379 │   │   │   │   try:                                                                                                                                                       │
+│ ❱ 380 │   │   │   │   │   self.subprocess.run(                                                                                                                                   │
+│   381 │   │   │   │   │   │   [                                                                                                                                                  │
+│   382 │   │   │   │   │   │   │   sys.executable,                                                                                                                                │
+│   383 │   │   │   │   │   │   │   "-m",                                                                                                                                          │
+│                                                                                                                                                                                  │
+│ ╭───────────────────────────────────────────────────────────────── locals ──────────────────────────────────────────────────────────────────╮                                    │
+│ │    app = <cz.vgg.podcaster v0.0.1 AppConfig>                                                                                              │                                    │
+│ │   self = <briefcase.platforms.android.gradle.GradleUpdateCommand object at 0x10daeaaa0>                                                   │                                    │
+│ │ target = PosixPath('/Users/ve.gomez/src/vvveracruz/podcaster/podcaster/android/gradle/Podcaster/app/src/main/assets/python/app_packages') │                                    │
+│ ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                    │
+│                                                                                                                                                                                  │
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/briefcase/integrations/subprocess.py:216 in run                                         │
+│                                                                                                                                                                                  │
+│   213 │   │   if stream_output or (                                                                                                                                              │
+│   214 │   │   │   self.command.input.is_output_controlled and not is_output_redirected                                                                                           │
+│   215 │   │   ):                                                                                                                                                                 │
+│ ❱ 216 │   │   │   return self._run_and_stream_output(args, **kwargs)                                                                                                             │
+│   217 │   │                                                                                                                                                                      │
+│   218 │   │   # Otherwise, invoke run() normally.                                                                                                                                │
+│   219 │   │   self._log_command(args)                                                                                                                                            │
+│                                                                                                                                                                                  │
+│ ╭───────────────────────────────────────────────────── locals ──────────────────────────────────────────────────────╮                                                            │
+│ │                 args = [                                                                                          │                                                            │
+│ │                        │   '/Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin/python',              │                                                            │
+│ │                        │   '-m',                                                                                  │                                                            │
+│ │                        │   'pip',                                                                                 │                                                            │
+│ │                        │   'install',                                                                             │                                                            │
+│ │                        │   '--upgrade',                                                                           │                                                            │
+│ │                        │   '--no-user',                                                                           │                                                            │
+│ │                        │   '--progress-bar',                                                                      │                                                            │
+│ │                        │   'off',                                                                                 │                                                            │
+│ │                        │   '--target=/Users/ve.gomez/src/vvveracruz/podcaster/podcaster/android/gradle/Podca'+44, │                                                            │
+│ │                        │   'feedparser',                                                                          │                                                            │
+│ │                        │   ... +3                                                                                 │                                                            │
+│ │                        ]                                                                                          │                                                            │
+│ │ is_output_redirected = None                                                                                       │                                                            │
+│ │               kwargs = {'check': True}                                                                            │                                                            │
+│ │                 self = <briefcase.integrations.subprocess.Subprocess object at 0x11675bac0>                       │                                                            │
+│ │        stream_output = False                                                                                      │                                                            │
+│ ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                            │
+│                                                                                                                                                                                  │
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/briefcase/integrations/subprocess.py:278 in _run_and_stream_output                      │
+│                                                                                                                                                                                  │
+│   275 │   │   │   return_code = process.poll()                                                                                                                                   │
+│   276 │   │                                                                                                                                                                      │
+│   277 │   │   if check and return_code:                                                                                                                                          │
+│ ❱ 278 │   │   │   raise subprocess.CalledProcessError(return_code, args, stderr=stderr)                                                                                          │
+│   279 │   │                                                                                                                                                                      │
+│   280 │   │   return subprocess.CompletedProcess(args, return_code, stderr=stderr)                                                                                               │
+│   281                                                                                                                                                                            │
+│                                                                                                                                                                                  │
+│ ╭───────────────────────────────────────────────── locals ─────────────────────────────────────────────────╮                                                                     │
+│ │        args = [                                                                                          │                                                                     │
+│ │               │   '/Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin/python',              │                                                                     │
+│ │               │   '-m',                                                                                  │                                                                     │
+│ │               │   'pip',                                                                                 │                                                                     │
+│ │               │   'install',                                                                             │                                                                     │
+│ │               │   '--upgrade',                                                                           │                                                                     │
+│ │               │   '--no-user',                                                                           │                                                                     │
+│ │               │   '--progress-bar',                                                                      │                                                                     │
+│ │               │   'off',                                                                                 │                                                                     │
+│ │               │   '--target=/Users/ve.gomez/src/vvveracruz/podcaster/podcaster/android/gradle/Podca'+44, │                                                                     │
+│ │               │   'feedparser',                                                                          │                                                                     │
+│ │               │   ... +3                                                                                 │                                                                     │
+│ │               ]                                                                                          │                                                                     │
+│ │       check = True                                                                                       │                                                                     │
+│ │      kwargs = {'stdout': -1, 'stderr': -2}                                                               │                                                                     │
+│ │     process = <Popen: returncode: 1 args: ['/Users/ve.gomez/.local/share/virtualenvs/podca...>           │                                                                     │
+│ │ return_code = 1                                                                                          │                                                                     │
+│ │        self = <briefcase.integrations.subprocess.Subprocess object at 0x11675bac0>                       │                                                                     │
+│ │      stderr = None                                                                                       │                                                                     │
+│ ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                                     │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+CalledProcessError: Command '['/Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin/python', '-m', 'pip', 'install', '--upgrade', '--no-user', '--progress-bar', 'off', '--target=/Users/ve.gomez/src/vvveracruz/podcaster/podcaster/android/gradle/Podcaster/app/src/main/assets/python/app_packages', 'feedparser', 'requests', 'pygame', 'toga-android>=0.3.0']' returned non-zero exit status 1.
+
+The above exception was the direct cause of the following exception:
+
+╭─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────╮
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/briefcase/__main__.py:14 in main                                                        │
+│                                                                                                                                                                                  │
+│   11 │   try:                                                                                                                                                                    │
+│   12 │   │   command, options = parse_cmdline(sys.argv[1:])                                                                                                                      │
+│   13 │   │   command.parse_config("pyproject.toml")                                                                                                                              │
+│ ❱ 14 │   │   command(**options)                                                                                                                                                  │
+│   15 │   │   result = 0                                                                                                                                                          │
+│   16 │   except HelpText as e:                                                                                                                                                   │
+│   17 │   │   log.info()                                                                                                                                                          │
+│                                                                                                                                                                                  │
+│ ╭───────────────────────────────────────── locals ─────────────────────────────────────────╮                                                                                     │
+│ │ command = <briefcase.platforms.android.gradle.GradleUpdateCommand object at 0x10daeaaa0> │                                                                                     │
+│ │       e = DependencyInstallError()                                                       │                                                                                     │
+│ │     log = <briefcase.console.Log object at 0x10be641c0>                                  │                                                                                     │
+│ │ options = {'update_dependencies': True, 'update_resources': False}                       │                                                                                     │
+│ │  result = 200                                                                            │                                                                                     │
+│ ╰──────────────────────────────────────────────────────────────────────────────────────────╯                                                                                     │
+│                                                                                                                                                                                  │
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/briefcase/commands/update.py:82 in __call__                                             │
+│                                                                                                                                                                                  │
+│   79 │   │   else:                                                                                                                                                               │
+│   80 │   │   │   state = None                                                                                                                                                    │
+│   81 │   │   │   for app_name, app in sorted(self.apps.items()):                                                                                                                 │
+│ ❱ 82 │   │   │   │   state = self.update_app(                                                                                                                                    │
+│   83 │   │   │   │   │   app,                                                                                                                                                    │
+│   84 │   │   │   │   │   update_dependencies=update_dependencies,                                                                                                                │
+│   85 │   │   │   │   │   update_resources=update_resources,                                                                                                                      │
+│                                                                                                                                                                                  │
+│ ╭─────────────────────────────────────────────── locals ───────────────────────────────────────────────╮                                                                         │
+│ │                 app = <cz.vgg.podcaster v0.0.1 AppConfig>                                            │                                                                         │
+│ │            app_name = 'podcaster'                                                                    │                                                                         │
+│ │             options = {}                                                                             │                                                                         │
+│ │                self = <briefcase.platforms.android.gradle.GradleUpdateCommand object at 0x10daeaaa0> │                                                                         │
+│ │               state = None                                                                           │                                                                         │
+│ │ update_dependencies = True                                                                           │                                                                         │
+│ │    update_resources = False                                                                          │                                                                         │
+│ ╰──────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                                         │
+│                                                                                                                                                                                  │
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/briefcase/commands/update.py:49 in update_app                                           │
+│                                                                                                                                                                                  │
+│   46 │   │                                                                                                                                                                       │
+│   47 │   │   if update_dependencies:                                                                                                                                             │
+│   48 │   │   │   self.logger.info("Updating dependencies...", prefix=app.app_name)                                                                                               │
+│ ❱ 49 │   │   │   self.install_app_dependencies(app=app)                                                                                                                          │
+│   50 │   │                                                                                                                                                                       │
+│   51 │   │   self.logger.info("Updating application code...", prefix=app.app_name)                                                                                               │
+│   52 │   │   self.install_app_code(app=app)                                                                                                                                      │
+│                                                                                                                                                                                  │
+│ ╭──────────────────────────────────────────────────── locals ────────────────────────────────────────────────────╮                                                               │
+│ │                 app = <cz.vgg.podcaster v0.0.1 AppConfig>                                                      │                                                               │
+│ │         bundle_path = PosixPath('/Users/ve.gomez/src/vvveracruz/podcaster/podcaster/android/gradle/Podcaster') │                                                               │
+│ │             options = {}                                                                                       │                                                               │
+│ │                self = <briefcase.platforms.android.gradle.GradleUpdateCommand object at 0x10daeaaa0>           │                                                               │
+│ │ update_dependencies = True                                                                                     │                                                               │
+│ │    update_resources = False                                                                                    │                                                               │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                               │
+│                                                                                                                                                                                  │
+│ /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/lib/python3.10/site-packages/briefcase/commands/create.py:396 in install_app_dependencies                            │
+│                                                                                                                                                                                  │
+│   393 │   │   │   │   │   │   check=True,                                                                                                                                        │
+│   394 │   │   │   │   │   )                                                                                                                                                      │
+│   395 │   │   │   │   except subprocess.CalledProcessError as e:                                                                                                                 │
+│ ❱ 396 │   │   │   │   │   raise DependencyInstallError() from e                                                                                                                  │
+│   397 │   │   else:                                                                                                                                                              │
+│   398 │   │   │   self.logger.info("No application dependencies.")                                                                                                               │
+│   399                                                                                                                                                                            │
+│                                                                                                                                                                                  │
+│ ╭───────────────────────────────────────────────────────────────── locals ──────────────────────────────────────────────────────────────────╮                                    │
+│ │    app = <cz.vgg.podcaster v0.0.1 AppConfig>                                                                                              │                                    │
+│ │   self = <briefcase.platforms.android.gradle.GradleUpdateCommand object at 0x10daeaaa0>                                                   │                                    │
+│ │ target = PosixPath('/Users/ve.gomez/src/vvveracruz/podcaster/podcaster/android/gradle/Podcaster/app/src/main/assets/python/app_packages') │                                    │
+│ ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                    │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+DependencyInstallError: Unable to install dependencies. This may be because one of your
+dependencies is invalid, or because pip was unable to connect
+to the PyPI server.
+

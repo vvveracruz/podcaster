@@ -1,0 +1,529 @@
+Date/Time:       2022-08-14 09:01:15 
+Command line:    /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin/briefcase run android --log
+
+OS Release:      Darwin 21.6.0
+OS Version:      Darwin Kernel Version 21.6.0: Sat Jun 18 17:07:25 PDT 2022; root:xnu-8020.140.41~1/RELEASE_X86_64
+Architecture:    x86_64
+Platform:        macOS-12.5-x86_64-i386-64bit
+
+Python exe:      /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin/python
+Python version:  3.10.6 (main, Aug 11 2022, 13:49:25) [Clang 13.1.6 (clang-1316.0.21.2.5)]
+Virtual env:     True
+Conda env:       False
+
+Briefcase:       0.3.8
+Target platform: android
+Target format:   gradle
+
+Environment Variables:
+    APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL=true
+    AWS_MFA_DURATION=28800
+    AWS_PROFILE=oe-prod-data-analyst-mfa
+    CIRCLE_CI_TOKEN_BASE_64=********************
+    COLORFGBG=7;0
+    COLORTERM=truecolor
+    COMMAND_MODE=unix2003
+    EDITOR=vim
+    GIT_ASKPASS=********************
+    HOME=/Users/ve.gomez
+    ITERM_PROFILE=Default
+    ITERM_SESSION_ID=w0t0p0:13732491-AD2C-4AE5-8595-F1BB90507163
+    LANG=en_GB.UTF-8
+    LC_TERMINAL=iTerm2
+    LC_TERMINAL_VERSION=3.4.15
+    LESS=-R
+    LOGNAME=ve.gomez
+    LSCOLORS=Gxfxcxdxbxegedabagacad
+    LaunchInstanceID=593449EA-F088-482A-AB73-16F6A820D80A
+    MallocNanoZone=0
+    ORIGINAL_XDG_CURRENT_DESKTOP=undefined
+    PAGER=less
+    PATH=/Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin:/usr/local/Cellar/pipenv/2022.8.13/libexec/tools:/Users/ve.gomez/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/Users/ve.gomez/bin
+    PIPENV_ACTIVE=1
+    PIP_DISABLE_PIP_VERSION_CHECK=1
+    PIP_PYTHON_PATH=/usr/local/Cellar/pipenv/2022.8.13/libexec/bin/python3.10
+    PWD=/Users/ve.gomez/src/vvveracruz/podcaster/podcaster
+    PYTHONDONTWRITEBYTECODE=1
+    SECURITYSESSIONID=186a4
+    SHELL=/bin/zsh
+    SHLVL=3
+    SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.7w8R8igNa1/Listeners
+    TENTACLIO__SECRETS_FILE=********************
+    TERM=xterm-256color
+    TERM_PROGRAM=vscode
+    TERM_PROGRAM_VERSION=1.70.0
+    TERM_SESSION_ID=w0t0p0:13732491-AD2C-4AE5-8595-F1BB90507163
+    TMPDIR=/var/folders/_l/p09qm54d2kz523pc154x4c9m0000gn/T/
+    USER=ve.gomez
+    VIRTUAL_ENV=/Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf
+    VSCODE_GIT_ASKPASS_EXTRA_ARGS=********************
+    VSCODE_GIT_ASKPASS_MAIN=********************
+    VSCODE_GIT_ASKPASS_NODE=********************
+    VSCODE_GIT_IPC_HANDLE=/var/folders/_l/p09qm54d2kz523pc154x4c9m0000gn/T/vscode-git-c2b63d8a32.sock
+    VSCODE_INJECTION=1
+    XPC_FLAGS=0x0
+    XPC_SERVICE_NAME=0
+    ZDOTDIR=/var/folders/_l/p09qm54d2kz523pc154x4c9m0000gn/T/vscode-zsh
+    ZSH=/Users/ve.gomez/.oh-my-zsh
+    _=/usr/local/bin/pipenv
+    __CFBundleIdentifier=com.microsoft.VSCode
+    __CF_USER_TEXT_ENCODING=0x1F5:0:2
+
+Briefcase Log:
+[08:59:36]                                                                                                                                                         subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /usr/libexec/java_home                                                                                                                          subprocess.py:435
+           >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     The operation couldn’t be completed. Unable to locate a Java Runtime.                                                                           subprocess.py:455
+           >>>     Please visit http://www.java.com for information on installing Java.                                                                            subprocess.py:455
+           >>>                                                                                                                                                     subprocess.py:455
+           >>> Return code: 1                                                                                                                                      subprocess.py:464
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/cmdline-tools/latest/bin/sdkmanager --list_installed                                               subprocess.py:435
+           >>> Environment Overrides:                                                                                                                              subprocess.py:446
+           >>>     ANDROID_SDK_ROOT=/Users/ve.gomez/.briefcase/tools/android_sdk                                                                                   subprocess.py:448
+           >>>     JAVA_HOME=/Users/ve.gomez/.briefcase/tools/java/Contents/Home                                                                                   subprocess.py:448
+[08:59:37] >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     Loading package information...                                                                                                                  subprocess.py:455
+           >>>     Loading local repository...                                                                                                                     subprocess.py:455
+           >>>     [=========                              ] 25% Loading local repository...                                                                       subprocess.py:455
+           >>>     [=========                              ] 25% Fetch remote repository...                                                                        subprocess.py:455
+           >>>     [=======================================] 100% Fetch remote repository...                                                                       subprocess.py:455
+           >>>     Installed packages:                                                                                                                             subprocess.py:455
+           >>>       Path                                    | Version      | Description                     | Location                                           subprocess.py:455
+           >>>       -------                                 | -------      | -------                         | -------                                            subprocess.py:455
+           >>>       build-tools;30.0.2                      | 30.0.2       | Android SDK Build-Tools 30.0.2  | build-tools/30.0.2                                 subprocess.py:455
+           >>>       cmake;3.10.2.4988404                    | 3.10.2       | CMake 3.10.2.4988404            | cmake/3.10.2.4988404                               subprocess.py:455
+           >>>       emulator                                | 31.3.10      | Android Emulator                | emulator                                           subprocess.py:455
+           >>>       ndk;21.4.7075529                        | 21.4.7075529 | NDK (Side by side) 21.4.7075529 | ndk/21.4.7075529                                   subprocess.py:455
+           >>>       patcher;v4                              | 1            | SDK Patch Applier v4            | patcher/v4                                         subprocess.py:455
+           >>>       platform-tools                          | 33.0.2       | Android SDK Platform-Tools      | platform-tools                                     subprocess.py:455
+           >>>       platforms;android-32                    | 1            | Android SDK Platform 32         | platforms/android-32                               subprocess.py:455
+           >>>       system-images;android-31;default;x86_64 | 3            | Intel x86 Atom_64 System Image  | system-images/android-31/default/x86_64            subprocess.py:455
+           >>>                                                                                                                                                     subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+           >>> Android emulator is already installed.                                                                                                             android_sdk.py:422
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /usr/libexec/java_home                                                                                                                          subprocess.py:435
+           >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     The operation couldn’t be completed. Unable to locate a Java Runtime.                                                                           subprocess.py:455
+           >>>     Please visit http://www.java.com for information on installing Java.                                                                            subprocess.py:455
+           >>>                                                                                                                                                     subprocess.py:455
+           >>> Return code: 1                                                                                                                                      subprocess.py:464
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/cmdline-tools/latest/bin/sdkmanager --list_installed                                               subprocess.py:435
+           >>> Environment Overrides:                                                                                                                              subprocess.py:446
+           >>>     ANDROID_SDK_ROOT=/Users/ve.gomez/.briefcase/tools/android_sdk                                                                                   subprocess.py:448
+           >>>     JAVA_HOME=/Users/ve.gomez/.briefcase/tools/java/Contents/Home                                                                                   subprocess.py:448
+[08:59:38] >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     Loading package information...                                                                                                                  subprocess.py:455
+           >>>     Loading local repository...                                                                                                                     subprocess.py:455
+           >>>     [=========                              ] 25% Loading local repository...                                                                       subprocess.py:455
+           >>>     [=========                              ] 25% Fetch remote repository...                                                                        subprocess.py:455
+           >>>     [=======================================] 100% Fetch remote repository...                                                                       subprocess.py:455
+           >>>     Installed packages:                                                                                                                             subprocess.py:455
+           >>>       Path                                    | Version      | Description                     | Location                                           subprocess.py:455
+           >>>       -------                                 | -------      | -------                         | -------                                            subprocess.py:455
+           >>>       build-tools;30.0.2                      | 30.0.2       | Android SDK Build-Tools 30.0.2  | build-tools/30.0.2                                 subprocess.py:455
+           >>>       cmake;3.10.2.4988404                    | 3.10.2       | CMake 3.10.2.4988404            | cmake/3.10.2.4988404                               subprocess.py:455
+           >>>       emulator                                | 31.3.10      | Android Emulator                | emulator                                           subprocess.py:455
+           >>>       ndk;21.4.7075529                        | 21.4.7075529 | NDK (Side by side) 21.4.7075529 | ndk/21.4.7075529                                   subprocess.py:455
+           >>>       patcher;v4                              | 1            | SDK Patch Applier v4            | patcher/v4                                         subprocess.py:455
+           >>>       platform-tools                          | 33.0.2       | Android SDK Platform-Tools      | platform-tools                                     subprocess.py:455
+           >>>       platforms;android-32                    | 1            | Android SDK Platform 32         | platforms/android-32                               subprocess.py:455
+           >>>       system-images;android-31;default;x86_64 | 3            | Intel x86 Atom_64 System Image  | system-images/android-31/default/x86_64            subprocess.py:455
+           >>>                                                                                                                                                     subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+                                                                                                                                                                       create.py:586
+           [podcaster] Generating application template...                                                                                                              create.py:586
+           Using app template: https://github.com/beeware/briefcase-android-gradle-template.git, branch 3.10                                                           create.py:246
+[08:59:39] Using existing template (sha 012d247017d680e6285848ff7876c91a6daec217, updated Thu Jun 23 08:36:12 2022)                                                      base.py:568
+                                                                                                                                                                       create.py:589
+           [podcaster] Installing support package...                                                                                                                   create.py:589
+           Using support package https://briefcase-support.org/python?platform=android&version=3.10                                                                    create.py:312
+           ... using most recent revision                                                                                                                              create.py:330
+[08:59:40] Python-3.10-Android-support.b2.zip already downloaded                                                                                                         base.py:514
+[08:59:41] Unpacking support package... done                                                                                                                           create.py:353
+                                                                                                                                                                       create.py:592
+           [podcaster] Installing dependencies...                                                                                                                      create.py:592
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.local/share/virtualenvs/podcaster-mFXQEBjf/bin/python -m pip install --upgrade --no-user --progress-bar off                    subprocess.py:435
+           --target=/Users/ve.gomez/src/vvveracruz/podcaster/podcaster/android/gradle/Podcaster/app/src/main/assets/python/app_packages feedparser pygame requests                  
+           'toga-android>=0.3.0.dev34'                                                                                                                                              
+[08:59:42] Collecting feedparser                                                                                                                                   subprocess.py:406
+             Using cached feedparser-6.0.10-py3-none-any.whl (81 kB)                                                                                               subprocess.py:406
+           Collecting pygame                                                                                                                                       subprocess.py:406
+             Using cached pygame-2.1.2-cp310-cp310-macosx_10_9_x86_64.whl (8.9 MB)                                                                                 subprocess.py:406
+           Collecting requests                                                                                                                                     subprocess.py:406
+             Using cached requests-2.28.1-py3-none-any.whl (62 kB)                                                                                                 subprocess.py:406
+           Collecting toga-android>=0.3.0.dev34                                                                                                                    subprocess.py:406
+             Using cached toga_android-0.3.0.dev35-py3-none-any.whl (41 kB)                                                                                        subprocess.py:406
+           Collecting sgmllib3k                                                                                                                                    subprocess.py:406
+             Using cached sgmllib3k-1.0.0-py3-none-any.whl                                                                                                         subprocess.py:406
+[08:59:43] Collecting urllib3<1.27,>=1.21.1                                                                                                                        subprocess.py:406
+             Using cached urllib3-1.26.11-py2.py3-none-any.whl (139 kB)                                                                                            subprocess.py:406
+           Collecting certifi>=2017.4.17                                                                                                                           subprocess.py:406
+             Using cached certifi-2022.6.15-py3-none-any.whl (160 kB)                                                                                              subprocess.py:406
+           Collecting idna<4,>=2.5                                                                                                                                 subprocess.py:406
+             Using cached idna-3.3-py3-none-any.whl (61 kB)                                                                                                        subprocess.py:406
+           Collecting charset-normalizer<3,>=2                                                                                                                     subprocess.py:406
+             Using cached charset_normalizer-2.1.0-py3-none-any.whl (39 kB)                                                                                        subprocess.py:406
+           Collecting rubicon-java>=0.2.6                                                                                                                          subprocess.py:406
+             Using cached rubicon_java-0.2.6-py3-none-any.whl (25 kB)                                                                                              subprocess.py:406
+           Collecting toga-core==0.3.0.dev35                                                                                                                       subprocess.py:406
+             Using cached toga_core-0.3.0.dev35-py3-none-any.whl (491 kB)                                                                                          subprocess.py:406
+           Collecting travertino>=0.1.3                                                                                                                            subprocess.py:406
+             Using cached travertino-0.1.3-py3-none-any.whl (15 kB)                                                                                                subprocess.py:406
+           Installing collected packages: sgmllib3k, urllib3, travertino, rubicon-java, pygame, idna, feedparser, charset-normalizer, certifi, toga-core,          subprocess.py:406
+           requests, toga-android                                                                                                                                                   
+[08:59:45] ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the          subprocess.py:406
+           following dependency conflicts.                                                                                                                                          
+           toga-cocoa 0.3.0.dev8 requires toga-core==0.3.0.dev8, but you have toga-core 0.3.0.dev35 which is incompatible.                                         subprocess.py:406
+           Successfully installed certifi-2022.6.15 charset-normalizer-2.1.0 feedparser-6.0.10 idna-3.3 pygame-2.1.2 requests-2.28.1 rubicon-java-0.2.6            subprocess.py:406
+           sgmllib3k-1.0.0 toga-android-0.3.0.dev35 toga-core-0.3.0.dev35 travertino-0.1.3 urllib3-1.26.11                                                                          
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+           Installing app dependencies... done                                                                                                                         create.py:378
+                                                                                                                                                                       create.py:595
+           [podcaster] Installing application code...                                                                                                                  create.py:595
+           Installing src/podcaster... done                                                                                                                            create.py:415
+                                                                                                                                                                       create.py:598
+           [podcaster] Installing application resources...                                                                                                             create.py:598
+           Unable to find 48px round variant for application icon; using default                                                                                       create.py:485
+           Unable to find 72px round variant for application icon; using default                                                                                       create.py:485
+           Unable to find 96px round variant for application icon; using default                                                                                       create.py:485
+           Unable to find 144px round variant for application icon; using default                                                                                      create.py:485
+           Unable to find 192px round variant for application icon; using default                                                                                      create.py:485
+           Unable to find 48px square variant for application icon; using default                                                                                      create.py:485
+           Unable to find 72px square variant for application icon; using default                                                                                      create.py:485
+           Unable to find 96px square variant for application icon; using default                                                                                      create.py:485
+           Unable to find 144px square variant for application icon; using default                                                                                     create.py:485
+           Unable to find 192px square variant for application icon; using default                                                                                     create.py:485
+                                                                                                                                                                       create.py:601
+           [podcaster] Created android/gradle/Podcaster                                                                                                                create.py:601
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /usr/libexec/java_home                                                                                                                          subprocess.py:435
+           >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     The operation couldn’t be completed. Unable to locate a Java Runtime.                                                                           subprocess.py:455
+           >>>     Please visit http://www.java.com for information on installing Java.                                                                            subprocess.py:455
+           >>>                                                                                                                                                     subprocess.py:455
+           >>> Return code: 1                                                                                                                                      subprocess.py:464
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/cmdline-tools/latest/bin/sdkmanager --list_installed                                               subprocess.py:435
+           >>> Environment Overrides:                                                                                                                              subprocess.py:446
+           >>>     ANDROID_SDK_ROOT=/Users/ve.gomez/.briefcase/tools/android_sdk                                                                                   subprocess.py:448
+           >>>     JAVA_HOME=/Users/ve.gomez/.briefcase/tools/java/Contents/Home                                                                                   subprocess.py:448
+[08:59:46] >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     Loading package information...                                                                                                                  subprocess.py:455
+           >>>     Loading local repository...                                                                                                                     subprocess.py:455
+           >>>     [=========                              ] 25% Loading local repository...                                                                       subprocess.py:455
+           >>>     [=========                              ] 25% Fetch remote repository...                                                                        subprocess.py:455
+           >>>     [=======================================] 100% Fetch remote repository...                                                                       subprocess.py:455
+           >>>     Installed packages:                                                                                                                             subprocess.py:455
+           >>>       Path                                    | Version      | Description                     | Location                                           subprocess.py:455
+           >>>       -------                                 | -------      | -------                         | -------                                            subprocess.py:455
+           >>>       build-tools;30.0.2                      | 30.0.2       | Android SDK Build-Tools 30.0.2  | build-tools/30.0.2                                 subprocess.py:455
+           >>>       cmake;3.10.2.4988404                    | 3.10.2       | CMake 3.10.2.4988404            | cmake/3.10.2.4988404                               subprocess.py:455
+           >>>       emulator                                | 31.3.10      | Android Emulator                | emulator                                           subprocess.py:455
+           >>>       ndk;21.4.7075529                        | 21.4.7075529 | NDK (Side by side) 21.4.7075529 | ndk/21.4.7075529                                   subprocess.py:455
+           >>>       patcher;v4                              | 1            | SDK Patch Applier v4            | patcher/v4                                         subprocess.py:455
+           >>>       platform-tools                          | 33.0.2       | Android SDK Platform-Tools      | platform-tools                                     subprocess.py:455
+           >>>       platforms;android-32                    | 1            | Android SDK Platform 32         | platforms/android-32                               subprocess.py:455
+           >>>       system-images;android-31;default;x86_64 | 3            | Intel x86 Atom_64 System Image  | system-images/android-31/default/x86_64            subprocess.py:455
+           >>>                                                                                                                                                     subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+                                                                                                                                                                       gradle.py:132
+           [podcaster] Building Android APK...                                                                                                                         gradle.py:132
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/src/vvveracruz/podcaster/podcaster/android/gradle/Podcaster/gradlew assembleDebug --console plain                               subprocess.py:435
+           >>> Environment Overrides:                                                                                                                              subprocess.py:446
+           >>>     ANDROID_SDK_ROOT=/Users/ve.gomez/.briefcase/tools/android_sdk                                                                                   subprocess.py:448
+           >>>     JAVA_HOME=/Users/ve.gomez/.briefcase/tools/java/Contents/Home                                                                                   subprocess.py:448
+[08:59:47] > Task :app:preBuild UP-TO-DATE                                                                                                                         subprocess.py:406
+           > Task :app:preDebugBuild UP-TO-DATE                                                                                                                    subprocess.py:406
+           > Task :app:compileDebugAidl NO-SOURCE                                                                                                                  subprocess.py:406
+           > Task :app:compileDebugRenderscript NO-SOURCE                                                                                                          subprocess.py:406
+           > Task :app:generateDebugBuildConfig                                                                                                                    subprocess.py:406
+           > Task :app:javaPreCompileDebug                                                                                                                         subprocess.py:406
+           > Task :app:checkDebugAarMetadata                                                                                                                       subprocess.py:406
+           > Task :app:generateDebugResValues                                                                                                                      subprocess.py:406
+           > Task :app:generateDebugResources                                                                                                                      subprocess.py:406
+[08:59:48] > Task :app:createDebugCompatibleScreenManifests                                                                                                        subprocess.py:406
+           > Task :app:extractDeepLinksDebug                                                                                                                       subprocess.py:406
+                                                                                                                                                                   subprocess.py:406
+           > Task :app:processDebugMainManifest                                                                                                                    subprocess.py:406
+           [androidx.vectordrawable:vectordrawable-animated:1.0.0]                                                                                                 subprocess.py:406
+           /Users/ve.gomez/.gradle/caches/transforms-3/0ea6d96cb0e6b6514a59df9dfbcbdbe1/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml Warning:                      
+                   Package name 'androidx.vectordrawable' used in: androidx.vectordrawable:vectordrawable-animated:1.0.0,                                          subprocess.py:406
+           androidx.vectordrawable:vectordrawable:1.0.1.                                                                                                                            
+                                                                                                                                                                   subprocess.py:406
+           > Task :app:processDebugManifest                                                                                                                        subprocess.py:406
+           > Task :app:processDebugManifestForPackage                                                                                                              subprocess.py:406
+           > Task :app:mergeDebugResources                                                                                                                         subprocess.py:406
+[08:59:57] > Task :app:generateJsonModelDebug                                                                                                                      subprocess.py:406
+[08:59:58] aapt2 W 08-14 08:59:57  9910 5486126 LoadedArsc.cpp:682] Unknown chunk type '200'.                                                                      subprocess.py:406
+                                                                                                                                                                   subprocess.py:406
+           > Task :app:processDebugResources                                                                                                                       subprocess.py:406
+[08:59:59]                                                                                                                                                         subprocess.py:406
+           > Task :app:externalNativeBuildDebug                                                                                                                    subprocess.py:406
+           Build native-lib_armeabi-v7a                                                                                                                            subprocess.py:406
+           ninja: Entering directory `/Users/ve.gomez/src/vvveracruz/podcaster/podcaster/android/gradle/Podcaster/app/.cxx/cmake/debug/armeabi-v7a'                subprocess.py:406
+           Build native-lib_arm64-v8a                                                                                                                              subprocess.py:406
+           ninja: Entering directory `/Users/ve.gomez/src/vvveracruz/podcaster/podcaster/android/gradle/Podcaster/app/.cxx/cmake/debug/arm64-v8a'                  subprocess.py:406
+           Build native-lib_x86                                                                                                                                    subprocess.py:406
+           ninja: Entering directory `/Users/ve.gomez/src/vvveracruz/podcaster/podcaster/android/gradle/Podcaster/app/.cxx/cmake/debug/x86'                        subprocess.py:406
+           Build native-lib_x86_64                                                                                                                                 subprocess.py:406
+           ninja: Entering directory `/Users/ve.gomez/src/vvveracruz/podcaster/podcaster/android/gradle/Podcaster/app/.cxx/cmake/debug/x86_64'                     subprocess.py:406
+[09:00:00]                                                                                                                                                         subprocess.py:406
+           > Task :app:compileDebugJavaWithJavac                                                                                                                   subprocess.py:406
+           Note: /Users/ve.gomez/src/vvveracruz/podcaster/podcaster/android/gradle/Podcaster/app/src/main/java/org/beeware/android/MainActivity.java uses          subprocess.py:406
+           unchecked or unsafe operations.                                                                                                                                          
+           Note: Recompile with -Xlint:unchecked for details.                                                                                                      subprocess.py:406
+                                                                                                                                                                   subprocess.py:406
+           > Task :app:compileDebugSources                                                                                                                         subprocess.py:406
+           > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE                                                                                                     subprocess.py:406
+           > Task :app:mergeDebugShaders                                                                                                                           subprocess.py:406
+           > Task :app:compileDebugShaders NO-SOURCE                                                                                                               subprocess.py:406
+           > Task :app:generateDebugAssets UP-TO-DATE                                                                                                              subprocess.py:406
+[09:00:01] > Task :app:mergeDebugAssets                                                                                                                            subprocess.py:406
+           > Task :app:processDebugJavaRes NO-SOURCE                                                                                                               subprocess.py:406
+           > Task :app:checkDebugDuplicateClasses                                                                                                                  subprocess.py:406
+           > Task :app:mergeLibDexDebug                                                                                                                            subprocess.py:406
+[09:00:02] > Task :app:desugarDebugFileDependencies                                                                                                                subprocess.py:406
+           > Task :app:mergeDebugJavaResource                                                                                                                      subprocess.py:406
+           > Task :app:dexBuilderDebug                                                                                                                             subprocess.py:406
+           > Task :app:mergeProjectDexDebug                                                                                                                        subprocess.py:406
+           > Task :app:mergeDebugJniLibFolders                                                                                                                     subprocess.py:406
+           > Task :app:validateSigningDebug                                                                                                                        subprocess.py:406
+           > Task :app:writeDebugAppMetadata                                                                                                                       subprocess.py:406
+           > Task :app:writeDebugSigningConfigVersions                                                                                                             subprocess.py:406
+[09:00:03] > Task :app:mergeExtDexDebug                                                                                                                            subprocess.py:406
+           > Task :app:mergeDebugNativeLibs                                                                                                                        subprocess.py:406
+           > Task :app:compressDebugAssets                                                                                                                         subprocess.py:406
+                                                                                                                                                                   subprocess.py:406
+           > Task :app:stripDebugDebugSymbols                                                                                                                      subprocess.py:406
+           /Users/ve.gomez/.briefcase/tools/android_sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-strip: error:                             subprocess.py:406
+           '/Users/ve.gomez/src/vvveracruz/podcaster/podcaster/android/gradle/Podcaster/app/build/intermediates/merged_native_libs/debug/out/lib/armeabi-v7a/libss                  
+           l.so': The file was not recognized as a valid object file                                                                                                                
+                                                                                                                                                                   subprocess.py:406
+           /Users/ve.gomez/.briefcase/tools/android_sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-strip: error:                             subprocess.py:406
+           '/Users/ve.gomez/src/vvveracruz/podcaster/podcaster/android/gradle/Podcaster/app/build/intermediates/merged_native_libs/debug/out/lib/armeabi-v7a/libcr                  
+           ypto.so': The file was not recognized as a valid object file                                                                                                             
+                                                                                                                                                                   subprocess.py:406
+           /Users/ve.gomez/.briefcase/tools/android_sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-strip: error:                             subprocess.py:406
+           '/Users/ve.gomez/src/vvveracruz/podcaster/podcaster/android/gradle/Podcaster/app/build/intermediates/merged_native_libs/debug/out/lib/arm64-v8a/libcryp                  
+           to.so': The file was not recognized as a valid object file                                                                                                               
+                                                                                                                                                                   subprocess.py:406
+           /Users/ve.gomez/.briefcase/tools/android_sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-strip: error:                             subprocess.py:406
+           '/Users/ve.gomez/src/vvveracruz/podcaster/podcaster/android/gradle/Podcaster/app/build/intermediates/merged_native_libs/debug/out/lib/arm64-v8a/libssl.                  
+           so': The file was not recognized as a valid object file                                                                                                                  
+                                                                                                                                                                   subprocess.py:406
+           /Users/ve.gomez/.briefcase/tools/android_sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-strip: error:                             subprocess.py:406
+           '/Users/ve.gomez/src/vvveracruz/podcaster/podcaster/android/gradle/Podcaster/app/build/intermediates/merged_native_libs/debug/out/lib/x86_64/libssl.so'                  
+           : The file was not recognized as a valid object file                                                                                                                     
+                                                                                                                                                                   subprocess.py:406
+           /Users/ve.gomez/.briefcase/tools/android_sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-strip: error:                             subprocess.py:406
+           '/Users/ve.gomez/src/vvveracruz/podcaster/podcaster/android/gradle/Podcaster/app/build/intermediates/merged_native_libs/debug/out/lib/x86_64/libcrypto.                  
+           so': The file was not recognized as a valid object file                                                                                                                  
+                                                                                                                                                                   subprocess.py:406
+           Unable to strip the following libraries, packaging them as they are: libcrypto.so, libssl.so.                                                           subprocess.py:406
+[09:00:04]                                                                                                                                                         subprocess.py:406
+           > Task :app:packageDebug                                                                                                                                subprocess.py:406
+           > Task :app:assembleDebug                                                                                                                               subprocess.py:406
+                                                                                                                                                                   subprocess.py:406
+           BUILD SUCCESSFUL in 17s                                                                                                                                 subprocess.py:406
+           31 actionable tasks: 31 executed                                                                                                                        subprocess.py:406
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+           Building... done                                                                                                                                            gradle.py:133
+                                                                                                                                                                         build.py:41
+           [podcaster] Built android/gradle/Podcaster/app/build/outputs/apk/debug/app-debug.apk                                                                          build.py:41
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb devices -l                                                                      subprocess.py:435
+           >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     List of devices attached                                                                                                                        subprocess.py:455
+           >>>                                                                                                                                                     subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/emulator/emulator -list-avds                                                                       subprocess.py:435
+           >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     beePhone                                                                                                                                        subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+                                                                                                                                                                  android_sdk.py:776
+           Select device:                                                                                                                                         android_sdk.py:777
+                                                                                                                                                                  android_sdk.py:778
+             1) @beePhone (emulator)                                                                                                                                  console.py:478
+             2) Create a new Android emulator                                                                                                                         console.py:478
+                                                                                                                                                                      console.py:480
+[09:00:06] >>> User input: 1                                                                                                                                          console.py:483
+                                                                                                                                                                  android_sdk.py:822
+           In future, you can specify this device by running:                                                                                                     android_sdk.py:822
+                                                                                                                                                                  android_sdk.py:822
+               $ briefcase run android -d @beePhone                                                                                                               android_sdk.py:822
+           >>> Device skin 'pixel_3a' already exists.                                                                                                             android_sdk.py:583
+                                                                                                                                                                       gradle.py:192
+           [podcaster] Starting emulator beePhone...                                                                                                                   gradle.py:192
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/emulator/emulator -list-avds                                                                       subprocess.py:435
+           >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     beePhone                                                                                                                                        subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/emulator/emulator @beePhone -dns-server 8.8.8.8                                                    subprocess.py:435
+           >>> Environment Overrides:                                                                                                                              subprocess.py:446
+           >>>     ANDROID_SDK_ROOT=/Users/ve.gomez/.briefcase/tools/android_sdk                                                                                   subprocess.py:448
+           >>>     JAVA_HOME=/Users/ve.gomez/.briefcase/tools/java/Contents/Home                                                                                   subprocess.py:448
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb devices -l                                                                      subprocess.py:435
+           >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     List of devices attached                                                                                                                        subprocess.py:455
+           >>>                                                                                                                                                     subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+[09:00:08]                                                                                                                                                         subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb devices -l                                                                      subprocess.py:435
+           >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     List of devices attached                                                                                                                        subprocess.py:455
+           >>>     emulator-5554          offline transport_id:23                                                                                                  subprocess.py:455
+           >>>                                                                                                                                                     subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+[09:00:10]                                                                                                                                                         subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb devices -l                                                                      subprocess.py:435
+           >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     List of devices attached                                                                                                                        subprocess.py:455
+           >>>     emulator-5554          offline transport_id:23                                                                                                  subprocess.py:455
+           >>>                                                                                                                                                     subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+[09:00:12]                                                                                                                                                         subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb devices -l                                                                      subprocess.py:435
+           >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     List of devices attached                                                                                                                        subprocess.py:455
+           >>>     emulator-5554          device product:sdk_phone64_x86_64 model:Android_SDK_built_for_x86_64 device:emulator64_x86_64 transport_id:23            subprocess.py:455
+           >>>                                                                                                                                                     subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb -s emulator-5554 emu avd name                                                   subprocess.py:435
+[09:00:13] >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     beePhone                                                                                                                                        subprocess.py:455
+           >>>     OK                                                                                                                                              subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+[09:00:15] Starting emulator... done                                                                                                                             android_sdk.py:1018
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb -s emulator-5554 shell getprop sys.boot_completed                               subprocess.py:435
+           >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     1                                                                                                                                               subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+                                                                                                                                                                       gradle.py:195
+           [podcaster] Starting app on @beePhone (running emulator) (device ID emulator-5554)                                                                          gradle.py:195
+                                                                                                                                                                       gradle.py:207
+           [podcaster] Installing app...                                                                                                                               gradle.py:207
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb -s emulator-5554 shell am force-stop cz.vgg.podcaster                           subprocess.py:435
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+           Stopping old versions of the app... done                                                                                                                    gradle.py:208
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb -s emulator-5554 install -r                                                     subprocess.py:435
+           /Users/ve.gomez/src/vvveracruz/podcaster/podcaster/android/gradle/Podcaster/app/build/outputs/apk/debug/app-debug.apk                                                    
+[09:00:17] >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     Performing Streamed Install                                                                                                                     subprocess.py:455
+           >>>     Success                                                                                                                                         subprocess.py:455
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+           Installing new app version... done                                                                                                                          gradle.py:212
+                                                                                                                                                                       gradle.py:215
+           [podcaster] Starting app...                                                                                                                                 gradle.py:215
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb -s emulator-5554 logcat -c                                                      subprocess.py:435
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+           Clearing device log... done                                                                                                                                 gradle.py:216
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb -s emulator-5554 shell am start                                                 subprocess.py:435
+           cz.vgg.podcaster/org.beeware.android.MainActivity -a android.intent.action.MAIN -c android.intent.category.LAUNCHER                                                      
+           >>> Command Output:                                                                                                                                     subprocess.py:453
+           >>>     Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=cz.vgg.podcaster/org.beeware.android.MainActivity  subprocess.py:455
+           }                                                                                                                                                                        
+           >>> Return code: 0                                                                                                                                      subprocess.py:464
+           Launching app... done                                                                                                                                       gradle.py:220
+                                                                                                                                                                       gradle.py:223
+           [podcaster] Following device log output (type CTRL-C to stop log)...                                                                                        gradle.py:223
+           ===========================================================================                                                                                 gradle.py:227
+                                                                                                                                                                   subprocess.py:433
+           >>> Running Command:                                                                                                                                    subprocess.py:434
+           >>>     /Users/ve.gomez/.briefcase/tools/android_sdk/platform-tools/adb -s emulator-5554 logcat -s 'MainActivity:*' 'stdio:*' 'Python:*'                subprocess.py:435
+           >>> Environment Overrides:                                                                                                                              subprocess.py:446
+           >>>     ANDROID_SDK_ROOT=/Users/ve.gomez/.briefcase/tools/android_sdk                                                                                   subprocess.py:448
+           >>>     JAVA_HOME=/Users/ve.gomez/.briefcase/tools/java/Contents/Home                                                                                   subprocess.py:448
+[09:00:18] --------- beginning of main                                                                                                                             subprocess.py:406
+           08-14 09:00:14.918  3910  3910 D MainActivity: onCreate() start                                                                                         subprocess.py:406
+           08-14 09:00:14.919  3910  3910 D MainActivity: onCreate(): captured stdout/stderr                                                                       subprocess.py:406
+           08-14 09:00:14.919  3910  3931 D stdio   : Starting to capture stdout/stderr to Android log.                                                            subprocess.py:406
+           08-14 09:00:14.919  3910  3931 D stdio   : stdout now successfully routes into the stdio logger.                                                        subprocess.py:406
+[09:00:19] 08-14 09:00:15.131  3910  3910 D MainActivity: Python stdlib already exists for                                                                         subprocess.py:406
+           stdlib/pythonhome.9ee77ee48f84f090dfa569836da448fefc2d2465c043b4c8ace62a433d5605a8.x86_64.zip                                                                            
+           08-14 09:00:15.131  3910  3910 D MainActivity: Unpacking Python assets to /data/user/0/cz.vgg.podcaster/files/python/user_code                          subprocess.py:406
+[09:00:23] 08-14 09:00:19.257  3910  3910 D MainActivity: Replacing old lastUpdateTime = 1660463773920 with actualLastUpdateTime = 1660464013130                   subprocess.py:406
+           08-14 09:00:19.260  3910  3910 D MainActivity: unpackPython() complete                                                                                  subprocess.py:406
+           08-14 09:00:19.263  3910  3910 D MainActivity: setPythonEnvVars() start                                                                                 subprocess.py:406
+           08-14 09:00:19.263  3910  3910 V MainActivity: pythonHome=/data/user/0/cz.vgg.podcaster/files/python/stdlib                                             subprocess.py:406
+           08-14 09:00:19.268  3910  3910 D MainActivity: setPythonEnvVars() complete                                                                              subprocess.py:406
+           08-14 09:00:19.272  3910  3910 D MainActivity: Computing Python version.                                                                                subprocess.py:406
+           08-14 09:00:19.305  3910  3910 D MainActivity: Computed Python version: 3.10                                                                            subprocess.py:406
+           08-14 09:00:19.327  3910  3910 I Python  : Start Python runtime...                                                                                      subprocess.py:406
+           08-14 09:00:19.327  3910  3910 D Python  : PYTHONHOME=/data/user/0/cz.vgg.podcaster/files/python/stdlib                                                 subprocess.py:406
+           08-14 09:00:19.327  3910  3910 D Python  :                                                                                                              subprocess.py:406
+           PYTHONPATH=/data/user/0/cz.vgg.podcaster/files/python/stdlib/lib/python3.10/:/data/user/0/cz.vgg.podcaster/files/python/user_code/app_packages:/data/us                  
+           er/0/cz.vgg.podcaster/files/python/user_code/app                                                                                                                         
+           08-14 09:00:19.327  3910  3910 D Python  : Not setting RUBICON_LIBRARY                                                                                  subprocess.py:406
+           08-14 09:00:19.327  3910  3910 I Python  : Adding Android logging module to default modules...                                                          subprocess.py:406
+           08-14 09:00:19.328  3910  3910 D Python  : Initializing Python runtime...                                                                               subprocess.py:406
+           08-14 09:00:19.357  3910  3910 D Python  : Replacing sys.stdout/sys.stderr with Android log wrappers...                                                 subprocess.py:406
+           08-14 09:00:19.359  3910  3910 I Python  : sys.stdout/stderr replaced with Android log wrappers.                                                        subprocess.py:406
+           08-14 09:00:19.360  3910  3910 V Python  : Import rubicon...                                                                                            subprocess.py:406
+           08-14 09:00:19.447  3910  3910 V Python  : Got rubicon python module                                                                                    subprocess.py:406
+           08-14 09:00:19.448  3910  3910 V Python  : Got method dispatch handler                                                                                  subprocess.py:406
+           08-14 09:00:19.448  3910  3910 I Python  : Python runtime started.                                                                                      subprocess.py:406
+           08-14 09:00:19.448  3910  3910 D MainActivity: Python.init() complete                                                                                   subprocess.py:406
+           08-14 09:00:19.448  3910  3910 D MainActivity: Python.run() start                                                                                       subprocess.py:406
+           08-14 09:00:19.449  3910  3910 D Python  : Running 'podcaster' as __main__...                                                                           subprocess.py:406
+[09:00:24] 08-14 09:00:20.239  3910  3910 E Python  : Application quit abnormally!                                                                                 subprocess.py:406
+           08-14 09:00:20.239  3910  3910 E Python  : Traceback (most recent call last):                                                                           subprocess.py:406
+           08-14 09:00:20.239  3910  3910 E Python  :   File "/data/user/0/cz.vgg.podcaster/files/python/stdlib/lib/python3.10/runpy.py", line 196, in             subprocess.py:406
+           _run_module_as_main                                                                                                                                                      
+           08-14 09:00:20.239  3910  3910 E Python  :     return _run_code(code, main_globals, None,                                                               subprocess.py:406
+           08-14 09:00:20.240  3910  3910 E Python  :   File "/data/user/0/cz.vgg.podcaster/files/python/stdlib/lib/python3.10/runpy.py", line 86, in _run_code    subprocess.py:406
+           08-14 09:00:20.242  3910  3910 E Python  :     exec(code, run_globals)                                                                                  subprocess.py:406
+           08-14 09:00:20.242  3910  3910 E Python  :   File "/data/user/0/cz.vgg.podcaster/files/python/user_code/app/podcaster/__main__.py", line 1, in <module> subprocess.py:406
+           08-14 09:00:20.242  3910  3910 E Python  :     from podcaster.app import main                                                                           subprocess.py:406
+           08-14 09:00:20.244  3910  3910 E Python  :   File "/data/user/0/cz.vgg.podcaster/files/python/user_code/app/podcaster/app.py", line 5, in <module>      subprocess.py:406
+           08-14 09:00:20.269  3910  3910 E Python  :     from .components import Feed, Player                                                                     subprocess.py:406
+           08-14 09:00:20.271  3910  3910 E Python  :   File "/data/user/0/cz.vgg.podcaster/files/python/user_code/app/podcaster/components/__init__.py", line 2,  subprocess.py:406
+           in <module>                                                                                                                                                              
+           08-14 09:00:20.271  3910  3910 E Python  :     from .player import Player                                                                               subprocess.py:406
+           08-14 09:00:20.274  3910  3910 E Python  :   File "/data/user/0/cz.vgg.podcaster/files/python/user_code/app/podcaster/components/player.py", line 2, in subprocess.py:406
+           <module>                                                                                                                                                                 
+           08-14 09:00:20.274  3910  3910 E Python  :     from pygame import mixer                                                                                 subprocess.py:406
+           08-14 09:00:20.280  3910  3910 E Python  :   File "/data/user/0/cz.vgg.podcaster/files/python/user_code/app_packages/pygame/__init__.py", line 83, in   subprocess.py:406
+           <module>                                                                                                                                                                 
+           08-14 09:00:20.281  3910  3910 E Python  :     from pygame.base import *  # pylint: disable=wildcard-import; lgtm[py/polluting-import]                  subprocess.py:406
+           08-14 09:00:20.300  3910  3910 E Python  : ModuleNotFoundError: No module named 'pygame.base'                                                           subprocess.py:406
+           08-14 09:00:20.302  3910  3910 D MainActivity: Python.run() end                                                                                         subprocess.py:406
+           08-14 09:00:20.303  3910  3910 D MainActivity: startPython() end                                                                                        subprocess.py:406
+           08-14 09:00:20.303  3910  3910 D MainActivity: user code onCreate() start                                                                               subprocess.py:406
+[09:01:15] >>> Return code: 0                                                                                                                                      subprocess.py:464
