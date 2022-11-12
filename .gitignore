@@ -1,1 +1,5 @@
+# Pypi
 *.egg-info
+
+# gen
+*.json
