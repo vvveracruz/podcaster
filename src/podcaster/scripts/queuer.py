@@ -1,7 +1,8 @@
+import json
 from typing import Iterable
+
 from feedparser import parse
 from feedparser.util import FeedParserDict
-import json
 
 
 def get_next_episode(
@@ -16,6 +17,7 @@ def get_next_episode(
         # get next up from top of bottom of feed (oldest)
         entries = iter(feed["entries"][::-1])
     ep = next(entries)
+    # skip listened episodes
     # TODO: is comparing titles really the best way to do this?
     # Maybe unique key from published time and name?
     while ep["title"] in [ep["title"] for ep in listening_history]:
