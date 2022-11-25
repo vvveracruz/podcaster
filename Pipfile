@@ -9,7 +9,7 @@ podcaster = {editable = true,path = "."}
 black = "*"
 
 [requires]
-python_version = "3.10"
+python_version = "==3.10"
 
 [packages]
-feedparser = "*"
+feedparser = "==6.0.10"
