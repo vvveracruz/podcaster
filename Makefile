@@ -1,6 +1,9 @@
 lint:
-	pipenv run black src/
-	pipenv run isort src/
+	pipenv run black src/ tests/
+	pipenv run isort src/ tests/
 
 test:
-	pipenv run pytest
+	pipenv run pytest -v
+
+clean:
+	rm *.json
